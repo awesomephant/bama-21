@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Line Test</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="/main.css">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@maxakohler">
+  <meta name="twitter:site" content="@maxakohler">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{site.description}}">
+  <meta name="twitter:image:src" content="{% if thumb %}{{ thumb }}{% endif %}">
+
+  <script src="./main.js"></script>
+</head>
+
+<body class='{{ class }}'>
+  {{ content }}
+</body>
+</html>

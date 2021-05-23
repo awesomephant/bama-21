@@ -1,0 +1,28 @@
+{
+  "name": "bama-21",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:webpack": "webpack --mode production",
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:sass": "sass ./css/main.scss ./_site/main.css --no-source-map",
+    "watch:webpack": "webpack --watch --mode development",
+    "watch:sass": "sass ./css/main.scss ./_site/main.css --watch --no-source-map",
+    "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
+    "start": "cross-env NODE_ENV=dev run-p watch:*",
+    "build": "cross-env NODE_ENV=production run-s build:*"
+  },
+  "author": "Max Kohler",
+  "license": "ISC",
+  "homepage": "/",
+  "dependencies": {
+    "@11ty/eleventy": "*",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.12",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  }
+}

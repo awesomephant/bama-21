@@ -1,0 +1,17 @@
+.lines {
+  border: 1px solid red;
+  display: block;
+}
+
+.controls {
+  position: fixed;
+  border: 1px solid black;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: .85rem;
+  font-family: sans-serif;
+  padding: .2rem .3rem;
+  border-radius: 2px;
+  background: rgb(20, 20, 20);
+}

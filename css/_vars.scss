@@ -1,0 +1,25 @@
+@mixin bp($point) {
+  @if $point==xl {
+    @media (min-width: 85rem) {
+      @content;
+    }
+  } @else if $point==l {
+    @media (min-width: 70rem) {
+      @content;
+    }
+  } @else if $point==ml {
+    @media (min-width: 55rem) {
+      @content;
+    }
+  } @else if $point==m {
+    @media (min-width: 45rem) {
+      @content;
+    }
+  } @else if $point==s {
+    @media (min-width: 35rem) {
+      @content;
+    }
+  }
+}
+
+$lightgray: #bbbbbb

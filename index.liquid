@@ -6,6 +6,98 @@ class: home
 <section class="hero">
     <canvas class='lines' id="lines"></canvas>
 </section>
-<aside class="controls">
-    controls go here
+<aside class="settings">
+    <div class="curtain">
+        <section class="wave">
+            <h4>Global</h4>
+            <div class="control">
+                <label for="c1-lineweight">Line Weight</label>
+                <input type="number" name="" id="lineweight" value="1">
+            </div>
+            <div class="control">
+                <label for="linecount">Line Count</label>
+                <input type="number" name="" id="linecount" value="100" step="1">
+            </div>
+            <div class="control">
+                <label for="c1-lineweight">Slope</label>
+                <input type="number" name="" id="slope" value="0" step=".01">
+            </div>
+        </section>
+        <section class="wave">
+            <section>
+                <h4>Wave 1</h4>
+                <div class="control">
+                    <label for="x1">X</label>
+                    <input type="number" name="" id="x1" value="200">
+                </div>
+                <div class="perlin">
+                    <h5>+P1</h5>
+                    <div class="control">
+                        <label for="w1-p1-amp">Amplitude</label>
+                        <input type="number" name="" id="w1_p1_amp" value="200" step="1">
+                    </div>
+                    <div class="control">
+                        <label for="w1-tween-count">Frequency</label>
+                        <input type="number" name="" id="w1_p1_freq" value=".0008" step=".0001">
+                    </div>
+                    <div class="control">
+                        <label for="w1-tween-count">Speed</label>
+                        <input type="number" name="" id="w1_p1_speed" value=".001" step=".0001">
+                    </div>
+                </div>
+                <div class="perlin">
+                    <h5>+P2</h5>
+                    <div class="control">
+                        <label for="w1-p2-amp">Amplitude</label>
+                        <input type="number" name="" id="w1_p2_amp" value="10" step="1">
+                    </div>
+                    <div class="control">
+                        <label for="w1_p2_freq">Frequency</label>
+                        <input type="number" name="" id="w1_p2_freq" value=".005" step=".001">
+                    </div>
+                    <div class="control">
+                        <label for="w1_p2_speed">Speed</label>
+                        <input type="number" name="" id="w1_p2_speed" value=".001" step=".0001">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="wave">
+            <h4>Wave 2</h4>
+            <div class="control">
+                <label for="x2">X</label>
+                <input type="number" name="" id="x2" value="500">
+            </div>
+            <div class="perlin">
+                <h5>+P1</h5>
+                <div class="control">
+                    <label for="w1-p1-amp">Amplitude</label>
+                    <input type="number" name="" id="w2_p1_amp" value="300">
+                </div>
+                <div class="control">
+                    <label for="w1-tween-count">Frequency</label>
+                    <input type="number" name="" id="w2_p1_freq" value=".0008" step=".0001">
+                </div>
+                <div class="control">
+                    <label for="w1-tween-count">Speed</label>
+                    <input type="number" name="" id="w2_p1_speed" value=".001" step=".0001">
+                </div>
+            </div>
+            <div class="perlin">
+                <h5>+P2</h5>
+                <div class="control">
+                    <label for="w1-p1-amp">Amplitude</label>
+                    <input type="number" name="" id="w2_p2_amp" value="50">
+                </div>
+                <div class="control">
+                    <label for="w1-tween-count">Frequency</label>
+                    <input type="number" name="" id="w2_p2_freq" value=".002" step=".0001">
+                </div>
+                <div class="control">
+                    <label for="w1-tween-count">Speed</label>
+                    <input type="number" name="" id="w2_p2_speed" value=".001" step=".0001">
+                </div>
+            </div>
+        </section>
+    </div>
 </aside>

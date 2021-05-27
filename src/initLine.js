@@ -90,7 +90,7 @@ function initTweenLines() {
 function initLines() {
     c = document.querySelector("#lines").getContext("2d")
     c.canvas.width = window.innerWidth;
-    c.canvas.height = window.innerHeight * .8;
+    c.canvas.height = window.innerHeight;
     // Init guide lines
     lineA.points = []
     lineB.points = []

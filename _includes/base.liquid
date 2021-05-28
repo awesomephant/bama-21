@@ -14,12 +14,23 @@
   <meta name="twitter:title" content="{{ site.title }}">
   <meta name="twitter:description" content="{{site.description}}">
   <meta name="twitter:image:src" content="{% if thumb %}{{ thumb }}{% endif %}">
-
   <script src="./main.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body class='{{ class }}'>
   {{ content }}
   <canvas class="cursor"></canvas>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

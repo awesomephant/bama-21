@@ -1,0 +1,68 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "/assets/uploads"
+show_preview_links: true
+collections:
+  - name: "settings"
+    label: "Settings"
+    editor: { preview: false }
+    files:
+      - file: "_data/settings.json"
+        name: "settings"
+        label: "Site Settings"
+        fields:
+          - label: "Meta Title"
+            name: "meta_title"
+            widget: "string"
+            hint: "Will be appear as the title in search results and social media cards."
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+            hint: "Might appear in search results and social media cards."
+          - label: "Default Social Media Image"
+            name: "social_image"
+            widget: "image"
+            hint: "Will appear in social media cards. On project pages the thumbnail will be used instead."
+  - name: "projects"
+    label: "Projects"
+    editor: { preview: false }
+    folder: "projects/"
+    preview_path: "/projects/{{slug}}/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "project"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: Is this a draft?
+        name: draft
+        widget: boolean
+        hint: "Draft projects won't appear on the homepage, but can still be accessed through a direct link.
+          "
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        hint: "Separate multiple tags by comma."
+      - label: "Description"
+        name: "body"
+        widget: markdown
+        buttons: [bold, italic, link, heading-two, heading-three, heading-four, bulleted-list, numbered-list]
+      - label: Featured Image
+        name: featured_image
+        widget: object
+        summary: "{{fields.url}}"
+        fields:
+          - label: Image file
+            name: image
+            widget: "image"
+            media_library:
+              config:
+                max_file_size: 5000000
+          - label: Alt text
+            name: alt
+            widget: "string"

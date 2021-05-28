@@ -10,5 +10,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addWatchTarget("./css/");
   eleventyConfig.addWatchTarget("./src/");
+  eleventyConfig.addPassthroughCopy({ "./admin/config.yml": "/admin/config.yml" });
   return {};
 };

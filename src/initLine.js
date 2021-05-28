@@ -30,6 +30,7 @@ function update() {
         let perlin1 = simplex2(point.y * window.settings.w1_p1_freq, point.y * window.settings.w1_p1_freq + offsetA1) * window.settings.w1_p1_amp + point.y * window.settings.slope;
         let perlin2 = simplex2(point.y * window.settings.w1_p2_freq, point.y * window.settings.w1_p2_freq + offsetA2) * window.settings.w1_p2_amp + point.y * window.settings.slope;
         point.x = window.settings.x1 + perlin1 + perlin2;
+        point.y = point.y0 + simplex2(offsetA1, 100) * 300
         if (config.debug) {
             mark(c, point.x, point.y)
         }
@@ -42,6 +43,7 @@ function update() {
         let perlin1 = simplex2(point.y * window.settings.w2_p1_freq + 3, point.y * window.settings.w2_p1_freq + offsetB1) * window.settings.w2_p1_amp + point.y * window.settings.slope;
         let perlin2 = simplex2(point.y * window.settings.w2_p2_freq + 3, point.y * window.settings.w2_p2_freq + offsetB2) * window.settings.w2_p2_amp + point.y * window.settings.slope;
         point.x = window.settings.x2 + perlin1 + perlin2;
+        point.y = point.y0 + simplex2(offsetA1, 1) * 300
         if (config.debug) {
             mark(c, point.x, point.y)
         }
@@ -96,8 +98,8 @@ function initLines() {
     lineB.points = []
     for (let i = 0; i < config.pointCount; i++) {
         let ay = 5 + (c.canvas.height) / config.pointCount * i
-        lineA.points.push({ x: 0, y: ay });
-        lineB.points.push({ x: 0, y: ay });
+        lineA.points.push({ x: 0, y: ay, y0: ay });
+        lineB.points.push({ x: 0, y: ay, y0: ay });
     }
 
     if (lineA.points.length !== lineB.points.length) {
@@ -110,4 +112,4 @@ function initLines() {
     loop()
 }
 
-export { initLines, initTweenLines}
+export { initLines, initTweenLines }

@@ -4,7 +4,6 @@ window.settings = {
 }
 
 function initSettings() {
-    console.log(window.settings)
     const settingsEl = document.querySelector(".settings")
     const inputs = settingsEl.querySelectorAll("input")
 
@@ -18,8 +17,11 @@ function initSettings() {
             }
         })
     })
-
-    console.log(window.settings)
+	window.addEventListener("keyup", e => {
+		if(e.key === "t"){
+			settingsEl.classList.toggle("active")
+		}	
+	})
 
 }
 

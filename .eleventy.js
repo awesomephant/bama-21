@@ -3,6 +3,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addCollection("projects", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("./projects/*.md");
+  });
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("favicon-16x16.png");

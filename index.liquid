@@ -8,19 +8,33 @@ class: home
 </section>
 <section class="projects">
     <nav class="filters">
-        <button>Tag A</button>
-        <button>Tag B </button>
-        <button>Tag C </button>
-        <button>Tag D </button>
-        <button>Tag E </button>
+    {% assign tags = "" | split: "" %}
+      {% for p in collections.projects %}
+        {% for tag in p.data.tags %}
+        {% assign taglist = tags | join: "" | downcase %}
+        {% assign tag_lower = tag | downcase %}
+          {% unless taglist contains tag_lower %}
+            {% unless p.data.draft == true %}
+            {% assign tags = tags | concat: tag%}
+            {% endunless %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+<button class="active" data-filter="all">All</button>
+{%for tag in tags %}
+  <button data-filter="{{tag | slug}}">{{tag}}</button>
+{% endfor %}
+                                                                                                       </div>
     </nav>
     <ul class="projects">
-        <li>Project title A</li>
-        <li>Project title B</li>
-        <li>Project title C</li>
+	{% for p in collections.projects %}
+	<li class="project__item">
+		<h3 class="project__title">{{p.data.title}}</h3>
+	</li>
+	{% endfor %}
     </ul>
 </section>
-<aside class="settings">
+<aside class="settings active">
     <div class="curtain">
         <section class="wave">
             <h4>Global</h4>
@@ -77,7 +91,7 @@ class: home
             </section>
         </section>
         <section class="wave">
-            <h4>Wave 2</h4>
+          <h4><span>Wave 2</span><span>(T) to Hide/Show</span></h4>
             <div class="control">
                 <label for="x2">X</label>
                 <input type="number" name="" id="x2" value="500">

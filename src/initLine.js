@@ -3,7 +3,7 @@ import { mark } from "./util";
 
 const config = {
     lineCount: 100,
-    pointCount: 300,
+    pointCount: 200,
     debug: false,
     slope: 0.1,
 }

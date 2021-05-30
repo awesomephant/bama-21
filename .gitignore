@@ -1,6 +1,7 @@
 node_modules
 _site
 documentation
-
+.yarn
+.yarnrc
 # Local Netlify folder
 .netlify

@@ -27,7 +27,7 @@ class: home
     </nav>
     <div class="projects__list">
 	{% for p in collections.projects %}
-    <a href="{{p.url}}" class="project__item">
+    <a href="{{p.url}}" class="project__item" data-tags="{% for t in p.data.tags %}{{t | slug}},{%endfor%}">
       <div class="project__image">
     <img src="{{p.data.featured_image.image}}" alt="{{p.data.featured_image.alt}}"/>
       </div>

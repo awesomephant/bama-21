@@ -18,11 +18,14 @@ let offsetB1 = 0;
 let offsetB2 = 0;
 
 function update() {
-    // Rolling update and draw into one loop for performance
     c.clearRect(0, 0, c.canvas.width, c.canvas.height)
+    
+    c.globalCompositeOperation = "source-over";
+      
+    // Rolling update and draw into one loop for performance
     c.lineWidth = window.settings.lineweight;
     c.strokeStyle = "red";
-
+    c.fillStyle = "transparent"
     offsetA1 += window.settings.w1_p1_speed;
     offsetA2 += window.settings.w1_p2_speed;
 
@@ -65,9 +68,16 @@ function update() {
             c.lineTo(point.x, point.y)
         })
         c.stroke();
-
     })
-
+    c.globalCompositeOperation = "destination-out"
+    const gradient = c.createLinearGradient(0, 0, 0, c.canvas.height);
+    gradient.addColorStop(0, "black");
+    gradient.addColorStop(.2, "transparent");
+    gradient.addColorStop(.8, "transparent");
+    gradient.addColorStop(1, "black");
+    c.fillStyle = gradient;
+    c.fillRect(0,0,c.canvas.width, c.canvas.height);
+ 
 }
 function loop() {
     update();

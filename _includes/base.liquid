@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
+  {% assign t = "" %}
+  {% if title %}
+    {% capture t %}{{title}} / {{site.meta_title}}{% endcapture %}
+  {% else %}
+    {% assign t = site.meta_title %}
+  {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Line Test</title>
+  <title>{{t}}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="/main.css">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@maxakohler">
   <meta name="twitter:site" content="@maxakohler">
-  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ t }}">
   <meta name="twitter:description" content="{{site.description}}">
   <meta name="twitter:image:src" content="{% if thumb %}{{ thumb }}{% endif %}">
-  <script src="./main.js"></script>
+  <script src="/main.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 

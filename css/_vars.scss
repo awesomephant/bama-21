@@ -66,4 +66,11 @@
 }
 
 $lightgray: #e0dedc;
+$orange: #FAB747;
+$mint: #9FF7BE;
 $sans: modelica, serif;
+$ratio: 1.5;
+:root {
+  --ms-0: 1rem;
+  --ms--1: calc(var(--ms-0) / #{$ratio});
+}

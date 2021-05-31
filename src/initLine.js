@@ -93,6 +93,8 @@ function initLines() {
     c = document.querySelector("#lines").getContext("2d")
     c.canvas.width = window.innerWidth;
     c.canvas.height = window.innerHeight;
+    window.settings.x1 = c.canvas.width / 2 - 0;
+    window.settings.x2 = c.canvas.width / 2 + 200;
     // Init guide lines
     lineA.points = []
     lineB.points = []

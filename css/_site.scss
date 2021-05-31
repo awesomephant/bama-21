@@ -14,10 +14,45 @@
 
 .projects {
   padding: 0 5%;
+  padding-bottom: 5%;
 }
 
+.project__item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1em;
+  .project__title {
+    font-size: var(--ms--1)
+  }
+  &:hover, &:focus {
+    .project_image {
+      filter: invert(1);
+    }
+  }
+  &:nth-child(2n) .project__image {
+    background: $mint;
+  }
+}
+
+.project__image {
+  margin-bottom: .2em;
+  background: $orange;
+  height: 10em;
+  display: inline-block;
+  img {
+    height: 100%;
+    width: auto;
+    display: block;
+    filter: grayscale(1);
+    mix-blend-mode: multiply;
+  }
+  
+}
 .filters {
+  margin-bottom: 2em;
+  font-weight: 600;
   button {
+    cursor: pointer;
     appearance: none;
     background: transparent;
     border: 0;

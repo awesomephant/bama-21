@@ -1,5 +1,6 @@
 import { simplex2 } from "./perlin";
-import { mark } from "./util";
+import { mark, average } from "./util";
+const Stats = require("stats.js");
 
 const config = {
     lineCount: 100,
@@ -7,6 +8,9 @@ const config = {
     debug: false,
     slope: 0.1,
 }
+
+//const stats = new Stats();
+//stats.showPanel(0)
 
 let lineA = {}
 let lineB = {}
@@ -69,6 +73,7 @@ function update() {
         })
         c.stroke();
     })
+
     c.globalCompositeOperation = "destination-out"
     const gradient = c.createLinearGradient(0, 0, 0, c.canvas.height);
     gradient.addColorStop(0, "black");
@@ -77,8 +82,8 @@ function update() {
     gradient.addColorStop(1, "black");
     c.fillStyle = gradient;
     c.fillRect(0,0,c.canvas.width, c.canvas.height);
- 
 }
+
 function loop() {
     update();
     window.requestAnimationFrame(loop)
@@ -122,6 +127,7 @@ function initLines() {
     initTweenLines()
     console.log(`Created ${tweenLines.length} tween lines, ${tweenLines[0].points.length} points/line.`)
     loop()
+    // document.body.appendChild( stats.dom );
 }
 
 export { initLines, initTweenLines }

@@ -4,19 +4,18 @@ let cursor = {
     targetY: 0,
     x: 0,
     y: 0,
-    r: 250
+    r: 450
 }
 function updateCursor() {
+    c.clearRect(cursor.x - cursor.r / 2, cursor.y - cursor.r / 2, cursor.r, cursor.r)
     cursor.x += (cursor.targetX - cursor.x) * .45
     cursor.y += (cursor.targetY - cursor.y) * .45
-    c.canvas.fillStyle= "transparent";
-    c.clearRect(0, 0, c.canvas.width, c.canvas.height)
-    let grad = c.createRadialGradient(cursor.x, cursor.y, 0, cursor.x, cursor.y, cursor.r);
+    let grad = c.createRadialGradient(cursor.x, cursor.y, 0, cursor.x, cursor.y, cursor.r / 2);
     grad.addColorStop(0, "rgba(250, 183, 71, 1)");
     grad.addColorStop(1, "rgba(250, 183, 71, 0)");
     c.fillStyle = grad;
     c.beginPath();
-    c.arc(cursor.x, cursor.y, cursor.r, 0, 2 * Math.PI);
+    c.arc(cursor.x, cursor.y, cursor.r / 2, 0, 2 * Math.PI);
     c.fill();
 
     window.requestAnimationFrame(updateCursor)

@@ -4,12 +4,12 @@ let cursor = {
     targetY: 0,
     x: 0,
     y: 0,
-    r: 450
+    r: 750
 }
 function updateCursor() {
     c.clearRect(cursor.x - cursor.r / 2, cursor.y - cursor.r / 2, cursor.r, cursor.r)
-    cursor.x += (cursor.targetX - cursor.x) * .45
-    cursor.y += (cursor.targetY - cursor.y) * .45
+    cursor.x += (cursor.targetX - cursor.x) * .1
+    cursor.y += (cursor.targetY - cursor.y) * .1
     let grad = c.createRadialGradient(cursor.x, cursor.y, 0, cursor.x, cursor.y, cursor.r / 2);
     grad.addColorStop(0, "rgba(250, 183, 71, 1)");
     grad.addColorStop(1, "rgba(250, 183, 71, 0)");

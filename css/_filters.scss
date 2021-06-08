@@ -10,21 +10,28 @@
   bottom: 0;
   z-index: 2000;
   font-size: var(--ms-4);
-  padding: .5em var(--padding);
+  padding: 0.5em var(--padding);
   backdrop-filter: blur(0);
   pointer-events: none;
   opacity: 0;
-  transition: $fast;
+  transition: opacity $fast, backdrop-filter $fast;
   &.active {
     pointer-events: all;
     backdrop-filter: blur(4px);
     opacity: 1;
+  }
+  .nav-stuck & {
+    position: fixed;
+    top: calc(var(--ms-0) * 6 + 1px);
   }
 }
 
 .filters__tags {
   li {
     display: inline-block;
+    &:last-of-type button:after {
+      content: "";
+    }
   }
   button {
     cursor: pointer;
@@ -40,9 +47,6 @@
     }
     &:after {
       content: ",";
-    }
-    &:last-of-type {
-      content: "";
     }
     &:hover,
     &:focus {

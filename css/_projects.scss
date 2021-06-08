@@ -16,11 +16,16 @@
   .project__title {
     font-size: var(--ms--1);
   }
+  img {
+    transition: $fast;
+  }
   &:hover,
   &:focus {
+    .project__image {
+      background: white;
+    }
     img {
       filter: grayscale(0);
-      mix-blend-mode: normal;
     }
   }
   &:nth-child(2n) .project__image {
@@ -33,6 +38,7 @@
   background: $orange;
   height: 10em;
   display: inline-block;
+  transition: $fast;
   border: 1px solid white;
   img {
     height: 100%;

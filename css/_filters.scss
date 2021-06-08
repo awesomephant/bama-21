@@ -33,6 +33,8 @@
     border: 0;
     text-transform: lowercase;
     padding-bottom: 0.1em;
+    border-bottom: 2px solid transparent;
+    transition: $fast;
     &.active {
       @extend%filter--active;
     }
@@ -61,6 +63,7 @@
   margin-bottom: 1em;
   cursor: pointer;
   border-bottom: 1px solid transparent;
+  transition: $fast;
   &:hover,
   &:focus {
     border-bottom: 1px solid currentColor;
@@ -73,6 +76,7 @@
   font-size: 0;
   margin-left: 0.2rem;
   cursor: pointer;
+  transition: $fast;
   &:hover,
   &:focus {
     opacity: 0.5;

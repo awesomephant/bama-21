@@ -9,14 +9,16 @@ layout: base
       <h2 class="project__person">{{title}}</h2>
       <h3 class="project__title">{{project_title}}</h3>
       <p class="project__supervisor">{{prof}}</p>
-      {{content}}
-      <ul class="project__links">
-        {% for l in links %}
-        <li>
-          <a href="{{l.url}}">{{l.url}}</a>
-        </li>
-        {% endfor %}
-      </ul>
+      <div class="project__body">
+        {{content}}
+        <ul class="project__links">
+          {% for l in links %}
+          <li>
+            <a href="{{l.url}}">{{l.url}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </section>
   <section class="project__images">

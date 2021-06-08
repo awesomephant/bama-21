@@ -14,4 +14,7 @@ a {
 body {
   background-color: $lightgray;
   font-family: $sans;
+  &.about {
+    background: $mint;;
+  }
 }

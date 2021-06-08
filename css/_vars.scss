@@ -72,6 +72,7 @@ $mint: #9ff7be;
 $sans: modelica, serif;
 $ratio: 1.3;
 $fast: 130ms;
+
 :root {
   --ms-0: clamp(1rem, calc(1.3vw + 0.2rem), 1.2rem);
   --ms--1: calc(var(--ms-0) / #{$ratio});
@@ -81,4 +82,13 @@ $fast: 130ms;
   --ms-4: calc(var(--ms-3) * #{$ratio});
   --ms-5: calc(var(--ms-4) * #{$ratio});
   --padding: 4rem;
+}
+
+%copy {
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  word-spacing: 0.001em;
+  font-weight: 600;
+  hyphens: auto;
+  font-size: var(--ms-0);
 }

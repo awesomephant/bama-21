@@ -1,0 +1,6 @@
+.page__content {
+    @extend %copy;
+    padding-top: 10rem;
+    padding-left: var(--padding);
+    max-width: 45em;
+}

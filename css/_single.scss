@@ -26,6 +26,11 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 1em;
+    opacity: 0;
+    transition: $fast;
+    &.loaded {
+      opacity: 1;
+    }
   }
 }
 
@@ -40,40 +45,44 @@
 }
 
 .project__text {
-  line-height: 1.35;
-  letter-spacing: 0.01em;
-  word-spacing: 0.001em;
+  @extend %copy;
   padding-left: var(--padding);
-  padding-top: 2.5em;
+  padding-top: var(--padding);
   padding-right: 1em;
-  p, ul, ol {
-    margin-bottom: .5em;
+}
+
+.project__body {
+  p,
+  ul,
+  ol {
+    margin-bottom: 0.5em;
   }
   li {
     list-style: inside;
   }
   a {
-    transition: $fast;;
+    transition: $fast;
     text-decoration: none;
     border-bottom: 1px solid currentColor;
-    &:hover, &:focus {
-      opacity: .5;
+    &:hover,
+    &:focus {
+      opacity: 0.5;
     }
   }
 }
 
 .project__person {
-  font-size: var(--ms-4);
+  font-size: var(--ms-3);
   font-weight: 600;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 .project__supervisor {
-  font-size: var(--ms-1);
-  margin-bottom: 2em;
+  font-size: var(--ms-0);
+  margin-bottom: 1.5em;
   font-weight: 600;
 }
 .project__title {
   font-weight: 600;
-  font-size: var(--ms-1);
+  font-size: var(--ms-0);
 }

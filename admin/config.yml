@@ -98,6 +98,7 @@ collections:
         fields:
           - label: Image file
             name: image
+            widget: image
             media_library:
               config:
                 max_file_size: 5000000

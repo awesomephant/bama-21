@@ -4,13 +4,24 @@ layout: base
 
 <article class="single-project">
   <section class="project__copy">
-  <h2 class="project__person">{{title}}</h2>
-  <h3 class="project__title">Project title goes here</h3>
-  <div class="project__text">
-    {{content}}
-  </div>
+    {% include nav.liquid %}
+    <div class="project__text">
+      <h2 class="project__person">{{title}}</h2>
+      <h3 class="project__title">{{project_title}}</h3>
+      <p class="project__supervisor">{{prof}}</p>
+      {{content}}
+      <ul class="project__links">
+        {% for l in links %}
+        <li>
+          <a href="{{l.url}}">{{l.url}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </section>
   <section class="project__images">
-    
+    {% for i in gallery%}
+    <img src="{{i.image}}" alt="{{i.alt}}" />
+    {% endfor %}
   </section>
 </article>

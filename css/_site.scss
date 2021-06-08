@@ -1,10 +1,113 @@
+.site__title {
+  padding: 5%;
+  font-size: var(--ms-5);
+  font-weight: 600;
+  color: $lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  span {
+    display: block;
+  }
+}
+.site__header {
+  display: flex;
+  padding: 0 var(--padding);
+  text-transform: lowercase;
+  position: fixed;
+  background: $lightgray;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: var(--ms-0);
+  height: 2.5em;
+  justify-content: space-between;
+  border-bottom: 1px solid $black;
+  padding-top: .5em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  a {
+    text-decoration: none;
+  }
+  span,
+  a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  span:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.hs {
+  position: relative;
+}
+
+.hs__logo {
+  height: 1.2em;
+  left: -2em;
+  position: absolute;
+}
+
+%link--current {
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid $black;
+    border-radius: 100%;
+  }
+}
+
+.site__nav {
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  font-size: var(--ms-2);
+  display: flex;
+  position: sticky;
+  text-transform: lowercase;
+  padding-left: var(--padding);
+  position: sticky;
+  top: calc(var(--ms-0) * 2.5 + -1px);
+  background: $lightgray;
+  z-index: 1000;
+  a {
+    display: block;
+    padding: 0.4em 1.2em;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid $black;
+    font-weight: 600;
+    position: relative;
+    &:first-of-type {
+      border-left: 1px solid $black;
+    }
+    &:first-of-type,
+    &:hover,
+    &:focus {
+      @extend %link--current;
+    }
+  }
+}
+
 .hero {
   position: relative;
-  }
+  height: 100vh;
+  overflow: hidden;
+}
 .lines {
   display: block;
   max-width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 0;
 }
 
@@ -15,67 +118,4 @@
   right: 0;
   left: 0;
   z-index: -1000;
-}
-
-.projects {
-  padding: 0 5%;
-  padding-bottom: 5%;
-}
-
-.project__item {
-  list-style: none;
-  display: inline-block;
-  margin-right: 1em;
-  text-decoration: none;
-  &.hidden {
-    display: none;
-  }
-  .project__title {
-    font-size: var(--ms--1)
-  }
-  &:hover, &:focus {
-    img {
-      filter: grayscale(0);
-      mix-blend-mode: normal;
-    }
-  }
-  &:nth-child(2n) .project__image {
-    background: $mint;
-  }
-}
-
-.project__image {
-  margin-bottom: .2em;
-  background: $orange;
-  height: 10em;
-  display: inline-block;
-  border: 1px solid white;
-  img {
-    height: 100%;
-    width: auto;
-    display: block;
-    border-radius: 1px;
-    filter: grayscale(1);
-    mix-blend-mode: multiply;
-  }
-  
-}
-.filters {
-  margin-bottom: 2em;
-  font-weight: 600;
-  button {
-    cursor: pointer;
-    appearance: none;
-    background: transparent;
-    border: 0;
-    padding: 0.2em;
-    &.active {
-      font-weight: 800;
-      text-decoration: underline;
-    }
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
 }

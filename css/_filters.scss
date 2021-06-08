@@ -1,0 +1,89 @@
+%filter--active {
+  border-bottom: 2px solid currentColor;
+}
+.filters {
+  position: absolute;
+  top: 0;
+  background: rgba($mint, 0.75);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  font-size: var(--ms-4);
+  padding: .5em var(--padding);
+  backdrop-filter: blur(0);
+  pointer-events: none;
+  opacity: 0;
+  transition: $fast;
+  &.active {
+    pointer-events: all;
+    backdrop-filter: blur(4px);
+    opacity: 1;
+  }
+}
+
+.filters__tags {
+  li {
+    display: inline-block;
+  }
+  button {
+    cursor: pointer;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    text-transform: lowercase;
+    padding-bottom: 0.1em;
+    &.active {
+      @extend%filter--active;
+    }
+    &:after {
+      content: ",";
+    }
+    &:last-of-type {
+      content: "";
+    }
+    &:hover,
+    &:focus {
+      @extend%filter--active;
+    }
+  }
+}
+
+.filters__open {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font-size: var(--ms-2);
+  font-weight: 600;
+  text-transform: lowercase;
+  color: $black;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid currentColor;
+  }
+}
+.filters__close {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font-size: 0;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  svg {
+    width: 2.5rem;
+  }
+  line {
+    fill: none;
+    stroke: $black;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+}

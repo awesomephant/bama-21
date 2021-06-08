@@ -3,37 +3,54 @@ layout: base
 class: home
 ---
 {% assign tags = "" | split: "" %}
-  {% for p in collections.projects %}
-    {% for tag in p.data.tags %}
-      {% assign taglist = tags | join: "" | downcase %}
-      {% assign tag_lower = tag | downcase %}
-      {% unless taglist contains tag_lower %}
-        {% unless p.data.draft == true %}
-          {% assign tags = tags | concat: tag%}
-        {% endunless %}
-      {% endunless %}
-  {% endfor %}
+{% for p in collections.projects %}
+{% for tag in p.data.tags %}
+{% assign taglist = tags | join: "" | downcase %}
+{% assign tag_lower = tag | downcase %}
+{% unless taglist contains tag_lower %}
+{% unless p.data.draft == true %}
+{% assign tags = tags | concat: tag%}
+{% endunless %}
+{% endunless %}
+{% endfor %}
 {% endfor %}
 
 <section class="hero">
-    <canvas class='lines' id="lines"></canvas>
+  <h1 class="site__title"><span>lüften</span></h1>
+  <canvas class='lines' id="lines"></canvas>
 </section>
+<nav class="site__nav">
+  <a href="/">Home</a>
+  <a href="/">Tickets</a>
+  <a href="/">About</a>
+</nav>
 <section class="projects">
-    <nav class="filters">
+  <button class="filters__open">Filter</button>
+  <div class="filters active">
+    <button class="filters__close">
+      {% include close.svg %}
+      Schliessen
+    </button>
+    <ul class="filters__tags">
+      <li>
         <button class="active" data-filter="all">All</button>
-        {%for tag in tags %}
-          <button data-filter="{{tag | slug}}">{{tag}}</button>
-        {% endfor %}
-    </nav>
-    <div class="projects__list">
-	{% for p in collections.projects %}
+      </li>
+      {%for tag in tags %}
+      <li>
+        <button data-filter="{{tag | slug}}">{{tag}}</button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="projects__list">
+    {% for p in collections.projects %}
     <a href="{{p.url}}" class="project__item" data-tags="{% for t in p.data.tags %}{{t | slug}},{%endfor%}">
       <div class="project__image">
-    <img src="{{p.data.featured_image.image}}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}"/>
+        <img src="{{p.data.featured_image.image}}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
       </div>
-    <h3 class="project__title">{{p.data.title}}</h3>
-	</a>
-	{% endfor %}
-    </div>
+      <h3 class="project__title">{{p.data.title}}</h3>
+    </a>
+    {% endfor %}
+  </div>
 </section>
 {% include settings.liquid %}

@@ -1,8 +1,18 @@
 function initFilters() {
-  console.log("Initialising filters...")
-  const filters = document.querySelectorAll(".filters button");
+  const container = document.querySelector(".filters");
+  const filters = document.querySelectorAll(".filters__tags button");
+  const openFilters = document.querySelector(".filters__open");
+  const closeFilters = document.querySelector(".filters__close");
   const cards = document.querySelectorAll(".project__item");
   let activeFilters = [];
+
+
+  openFilters.addEventListener("click", () => {
+    container.classList.add("active")
+  })
+  closeFilters.addEventListener("click", () => {
+    container.classList.remove("active")
+  })
 
   function applyFilters() {
     cards.forEach((c) => {

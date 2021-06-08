@@ -66,11 +66,19 @@
 }
 
 $lightgray: #e0dedc;
-$orange: #FAB747;
-$mint: #9FF7BE;
+$black: #010101;
+$orange: #fab747;
+$mint: #9ff7be;
 $sans: modelica, serif;
-$ratio: 1.5;
+$ratio: 1.3;
+$fast: 130ms;
 :root {
-  --ms-0: 1rem;
+  --ms-0: clamp(1rem, calc(1.3vw + 0.2rem), 1.2rem);
   --ms--1: calc(var(--ms-0) / #{$ratio});
+  --ms-1: calc(var(--ms-0) * #{$ratio});
+  --ms-2: calc(var(--ms-1) * #{$ratio});
+  --ms-3: calc(var(--ms-2) * #{$ratio});
+  --ms-4: calc(var(--ms-3) * #{$ratio});
+  --ms-5: calc(var(--ms-4) * #{$ratio});
+  --padding: 4rem;
 }

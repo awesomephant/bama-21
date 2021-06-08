@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   {% assign t = "" %}
   {% if title %}
-    {% capture t %}{{title}} / {{site.meta_title}}{% endcapture %}
+  {% capture t %}{{title}} / {{site.meta_title}}{% endcapture %}
   {% else %}
-    {% assign t = site.meta_title %}
+  {% assign t = site.meta_title %}
   {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,10 +21,30 @@
   <meta name="twitter:description" content="{{site.description}}">
   <meta name="twitter:image:src" content="{% if thumb %}{{ thumb }}{% endif %}">
   <script src="/main.js"></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 </head>
 
 <body class='{{ class }}'>
+  <header class="site__header">
+    <h2>
+      <a class="hs" href="https://www.hs-mainz.de/">
+        {% include hs-logo.svg %}
+        HS Mainz
+      </a>
+      <span>Kommunikationsdesign</span>
+    </h2>
+    <h2>
+      <span>
+        06.07. – 16.07.
+      </span>
+      <span>
+        Lüften im Lux
+      </span>
+      <span>
+        BaMa Ausstellung 2021
+      </span>
+    </h2>
+  </header>
   {{ content }}
   <canvas class="cursor"></canvas>
   <script>
@@ -38,4 +59,5 @@
     }
   </script>
 </body>
+
 </html>

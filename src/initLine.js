@@ -1,6 +1,5 @@
 import { simplex2 } from "./perlin";
 import { mark, average } from "./util";
-const Stats = require("stats.js");
 
 const config = {
     lineCount: 100,
@@ -57,7 +56,7 @@ function update() {
     })
 
     // update tween lines
-    c.strokeStyle = "white";
+    c.strokeStyle = "#e0dedc";
     tweenLines.forEach((line, i) => {
         c.beginPath();
         c.moveTo(line.points[0].x, line.points[0].y)

@@ -12,18 +12,31 @@ collections:
         name: "settings"
         label: "Site Settings"
         fields:
+          - label: "About text"
+            name: "about_copy"
+            widget: "markdown"
+            required: false
+            buttons: [bold, italic, link, bulleted-list, numbered-list, heading-two]
+            editor_components: []
+          - label: "Ticket Link"
+            name: "ticklet_link"
+            widget: "string"
+            required: false
           - label: "Meta Title"
             name: "meta_title"
             widget: "string"
             hint: "Will be appear as the title in search results and social media cards."
+            required: false
           - label: "Meta Description"
             name: "meta_description"
             widget: "string"
             hint: "Might appear in search results and social media cards."
+            required: false
           - label: "Default Social Media Image"
             name: "social_image"
+            required: false
             widget: "image"
-            hint: "Will appear in social media cards. On project pages the thumbnail will be used instead."
+            hint: "Will appear in social media cards. On project pages the featured image will be used instead."
   - name: "projects"
     label: "Projects"
     label_singular: "Project"
@@ -40,6 +53,14 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Project Title"
+        name: "project_title"
+        widget: "string"
+        required: false
+      - label: "Betreuender Prof"
+        name: "prof"
+        widget: "string"
+        required: false
       - label: Is this a draft?
         name: draft
         widget: boolean
@@ -50,11 +71,41 @@ collections:
         name: "tags"
         widget: "list"
         hint: "Separate multiple tags by comma."
+        required: false
       - label: "Description"
         name: "body"
         widget: markdown
-        buttons: [bold, italic, link, heading-two, heading-three, heading-four, bulleted-list, numbered-list]
+        required: false
+        buttons: [bold, italic, link, bulleted-list, numbered-list]
+        editor_components: []
+      - label: Links
+        name: links
+        required: false
+        max: 5
+        label_singular: link
+        widget: list
+        summary: url
+        fields:
+          - label: URL
+            name: url
+            widget: string
+      - label: Gallery Images
+        label_singular: Gallery Image
+        name: gallery
+        widget: list
+        required: false
+        max: 10
+        fields:
+          - label: Image file
+            name: image
+            media_library:
+              config:
+                max_file_size: 5000000
+          - label: Alt text
+            name: alt
+            widget: string
       - label: Featured Image
+        required: false
         name: featured_image
         widget: object
         summary: "{{fields.url}}"

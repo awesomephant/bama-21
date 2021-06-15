@@ -22,9 +22,9 @@ let offsetB2 = 0;
 
 function update() {
     c.clearRect(0, 0, c.canvas.width, c.canvas.height)
-    
+
     c.globalCompositeOperation = "source-over";
-      
+
     // Rolling update and draw into one loop for performance
     c.lineWidth = window.settings.lineweight;
     c.strokeStyle = "red";
@@ -80,7 +80,7 @@ function update() {
     gradient.addColorStop(.8, "transparent");
     gradient.addColorStop(1, "black");
     c.fillStyle = gradient;
-    c.fillRect(0,0,c.canvas.width, c.canvas.height);
+    c.fillRect(0, 0, c.canvas.width, c.canvas.height);
 }
 
 function loop() {
@@ -109,11 +109,12 @@ function initLines() {
     c.canvas.height = window.innerHeight;
     window.settings.x1 = c.canvas.width / 2 - 0;
     window.settings.x2 = c.canvas.width / 2 + 200;
+    const yMargin = 300;
     // Init guide lines
     lineA.points = []
     lineB.points = []
     for (let i = 0; i < config.pointCount; i++) {
-        let ay = 5 + (c.canvas.height) / config.pointCount * i
+        let ay = -yMargin + (c.canvas.height + yMargin * 2) / config.pointCount * i
         lineA.points.push({ x: 0, y: ay, y0: ay });
         lineB.points.push({ x: 0, y: ay, y0: ay });
     }

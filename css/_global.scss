@@ -11,6 +11,9 @@ a {
   color: inherit;
 }
 
+html {
+  scrollbar-color: white black;
+}
 body {
   background-color: $lightgray;
   font-family: $sans;

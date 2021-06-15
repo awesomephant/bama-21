@@ -52,3 +52,9 @@
     }
   }
 }
+.home a[href="/"]{
+  @extend %link--current;
+}
+.about a[href*=about]{
+  @extend %link--current;
+}

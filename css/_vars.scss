@@ -82,7 +82,10 @@ $fast: 130ms;
   --ms-4: calc(var(--ms-3) * #{$ratio});
   --ms-5: calc(var(--ms-4) * #{$ratio});
   --ms-6: calc(var(--ms-5) * #{$ratio});
-  --padding: 4rem;
+  --padding: 2.8rem;
+  @include bp(m){
+    --padding: 4rem;
+  }
 }
 
 %copy {

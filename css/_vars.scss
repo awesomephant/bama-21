@@ -81,6 +81,7 @@ $fast: 130ms;
   --ms-3: calc(var(--ms-2) * #{$ratio});
   --ms-4: calc(var(--ms-3) * #{$ratio});
   --ms-5: calc(var(--ms-4) * #{$ratio});
+  --ms-6: calc(var(--ms-5) * #{$ratio});
   --padding: 4rem;
 }
 

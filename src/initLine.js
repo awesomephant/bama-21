@@ -56,7 +56,7 @@ function update() {
     })
 
     // update tween lines
-    c.strokeStyle = "#e0dedc";
+    c.strokeStyle = "white";
     tweenLines.forEach((line, i) => {
         c.beginPath();
         c.moveTo(line.points[0].x, line.points[0].y)

@@ -19,8 +19,11 @@
   display: flex;
   text-transform: lowercase;
   padding-left: var(--padding);
-  background: $lightgray;
   z-index: 1000;
+  transition: $fast;
+  .nav-stuck & {
+    background: $lightgray;
+  }
   .home & {
     top: calc(var(--ms-0) * 2.5 + -1px);
     position: sticky;

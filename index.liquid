@@ -20,6 +20,7 @@ class: home
   <canvas class='lines' id="lines"></canvas>
 </section>
 {% include nav.liquid %}
+{% if settings.show_work %}
 <section class="projects">
   <div class="intersection-sentry"></div>
   <button class="filters__open">Filter</button>
@@ -50,4 +51,5 @@ class: home
     {% endfor %}
   </div>
 </section>
+{% endif %}
 {% include settings.liquid %}

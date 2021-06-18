@@ -16,9 +16,10 @@ function createObserver(el) {
     observer.observe(el);
 }
 function initNav() {
-    const nav = document.querySelector(".site__nav")
     const sentry = document.querySelector(".intersection-sentry")
-    createObserver(sentry);
+    if (sentry){
+        createObserver(sentry);
+    }
 
 }
 

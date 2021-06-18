@@ -37,6 +37,10 @@ collections:
             required: false
             widget: "image"
             hint: "Will appear in social media cards. On project pages the featured image will be used instead."
+          - label: "Show work?"
+            name: "show_work"
+            required: true
+            widget: "boolean"
   - name: "projects"
     label: "Projects"
     label_singular: "Project"

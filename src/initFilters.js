@@ -6,13 +6,14 @@ function initFilters() {
   const cards = document.querySelectorAll(".project__item");
   let activeFilters = [];
 
-
-  openFilters.addEventListener("click", () => {
-    container.classList.add("active")
-  })
-  closeFilters.addEventListener("click", () => {
-    container.classList.remove("active")
-  })
+  if (container){
+    openFilters.addEventListener("click", () => {
+      container.classList.add("active")
+    })
+    closeFilters.addEventListener("click", () => {
+      container.classList.remove("active")
+    })
+  }
 
   function applyFilters() {
     cards.forEach((c) => {

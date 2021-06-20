@@ -95,6 +95,7 @@ $fast: 130ms;
   font-weight: 600;
   hyphens: auto;
   font-size: var(--ms-0);
+  font-feature-settings: "onum" 1;
   a {
     text-decoration: none;
     border-bottom: 1px solid rgba($black, 0.4);

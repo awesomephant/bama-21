@@ -1,6 +1,17 @@
 .page__content {
-    @extend %copy;
-    padding-top: 10rem;
-    padding-left: var(--padding);
-    max-width: 45em;
+  @extend %copy;
+  padding-top: 10rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  display: grid;
+  column-gap: 2em;
+  @include bp(l) {
+    grid-template-columns: 1fr 1fr;
+  }
+  section:nth-child(2) {
+    max-width: 25em;
+    p {
+      hyphens: none;
+    }
+  }
 }

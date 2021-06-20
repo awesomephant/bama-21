@@ -12,8 +12,13 @@ collections:
         name: "settings"
         label: "Site Settings"
         fields:
-          - label: "About text"
-            name: "about_copy"
+          - label: "About text left"
+            name: "about_copy_left"
+            widget: "markdown"
+            required: false
+            buttons: [bold, italic, link, bulleted-list, numbered-list, heading-two]
+          - label: "About text right"
+            name: "about_copy_right"
             widget: "markdown"
             required: false
             buttons: [bold, italic, link, bulleted-list, numbered-list, heading-two]

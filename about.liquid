@@ -6,5 +6,10 @@ class: about
 {% include nav.liquid %}
 
 <article class="page__content">
-  {{settings.about_copy}}
+  <section>
+    {{settings.about_copy_left | renderMarkdown }}
+  </section>
+  <section>
+    {{settings.about_copy_right | renderMarkdown }}
+  </section>
 </article>

@@ -1,9 +1,12 @@
+const markdownIt = require("markdown-it");
+const md = new markdownIt();
+
 if (process.env.NODE_ENV === "production") {
   console.log("Building site for production.")
 }
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addCollection("projects", function(collectionApi) {
+  eleventyConfig.addCollection("projects", function (collectionApi) {
     return collectionApi.getFilteredByGlob("./projects/*.md");
   });
   eleventyConfig.addPassthroughCopy("assets");
@@ -14,5 +17,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./css/");
   eleventyConfig.addWatchTarget("./src/");
   eleventyConfig.addPassthroughCopy({ "./admin/config.yml": "/admin/config.yml" });
+  eleventyConfig.addFilter("renderMarkdown", function (value) {
+    return md.render(value);
+  });
   return {};
 };

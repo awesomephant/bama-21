@@ -1,9 +1,9 @@
 let c;
 let cursor = {
-    targetX: 0,
-    targetY: 0,
-    x: 0,
-    y: 0,
+    targetX: window.innerWidth / 2,
+    targetY: window.innerHeight / 2,
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
     r: 750
 }
 function updateCursor() {
@@ -24,9 +24,14 @@ function initCursor() {
     c = document.querySelector(".cursor").getContext("2d")
     c.canvas.width = window.innerWidth;
     c.canvas.height = window.innerHeight;
+    window.addEventListener("touchstart", e => {
+        window.hasTouch = true;
+    })
     window.addEventListener("mousemove", e => {
-        cursor.targetX = e.clientX;
-        cursor.targetY = e.clientY;
+        if (!window.hasTouch){
+            cursor.targetX = e.clientX;
+            cursor.targetY = e.clientY;
+        }
     })
     updateCursor()
 }

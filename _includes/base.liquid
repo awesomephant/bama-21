@@ -13,15 +13,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{t}}</title>
   <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="{{"/main.css" | url}}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@maxakohler">
   <meta name="twitter:site" content="@maxakohler">
   <meta name="twitter:title" content="{{ t }}">
   <meta name="twitter:description" content="{{site.description}}">
   <meta name="twitter:image:src" content="{% if thumb %}{{ thumb }}{% endif %}">
-  <script src="/main.js"></script>
+  <script src="{{"/main.js" | url}}"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    @font-face {
+      font-family: "modelica";
+      src: url({{"/assets/fonts/BwModelicaSS02-Medium.woff" | url}}) format("woff");
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "modelica";
+      src: url({{"/assets/fonts/BwModelicaSS02-Medium.woff2" | url}}) format("woff2");
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "modelica";
+      src: url({{"/assets/fonts/BwModelicaSS02-Bold.woff" | url}}) format("woff");
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "modelica";
+      src: url({{"/assets/fonts/BwModelicaSS02-Bold.woff2" | url}}) format("woff2");
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+    }
+  </style>
 </head>
 
 <body class='{{ class }}' data-showing-work="{{settings.show_work}}">

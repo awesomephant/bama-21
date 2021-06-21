@@ -1,11 +1,14 @@
 const markdownIt = require("markdown-it");
 const md = new markdownIt();
 
-if (process.env.NODE_ENV === "production") {
-  console.log("Building site for production.")
-}
-
 module.exports = function (eleventyConfig) {
+  let prefix = "/sose21/"
+
+  if (process.env.NODE_ENV === "staging") {
+    console.log("Building site for staging, disabling pathPrefix.")
+    prefix = ""
+  }
+
   eleventyConfig.addCollection("projects", function (collectionApi) {
     return collectionApi.getFilteredByGlob("./projects/*.md");
   });
@@ -20,5 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("renderMarkdown", function (value) {
     return md.render(value);
   });
-  return {};
+  return {
+    pathPrefix: prefix
+  };
 };

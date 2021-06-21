@@ -27,12 +27,14 @@
     background: $lightgray;
   }
   .home & {
-    top: 0;
-    bottom: 0;
+    border-top: 1px solid $black;
+    position: fixed;
+    bottom: 1px;
     left: 0;
     right: 0;
+  }
+  .home[data-showing-work=true] & {
     position: sticky;
-    border-top: 1px solid $black;
     top: calc(var(--ms-0) * 3.5 + -1px);
     @include bp(ml) {
       top: calc(var(--ms-0) * 2.4 + -1px);

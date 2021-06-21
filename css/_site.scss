@@ -14,34 +14,64 @@
 }
 
 .site__links {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   @include bp(m) {
     margin-bottom: 0;
   }
 }
+
 .site__header {
   display: flex;
   flex-flow: column;
-  padding: .75em var(--padding);
-  position: absolute;
-  @include bp(m) {
-    padding: 0 var(--padding);
-    flex-flow: row;
-    height: 2.5em;
-    padding-top: 0.5em;
-    position: fixed;
-  }
+  padding: 0 var(--padding);
+  padding-top: 0.5em;
+  border-bottom: 1px solid $black;
+  margin-bottom: -1px;
   text-transform: lowercase;
   z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
   font-size: var(--ms-0);
-  justify-content: space-between;
-  border-bottom: 1px solid $black;
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: $fast;
+  line-height: 1.1;
+  height: 3.5em;
+  @include bp(m) {
+    margin-bottom: 0;
+    justify-content: space-between;
+    flex-flow: row;
+    .home & {
+      position: fixed;
+    }
+  }
+  @include bp(ml) {
+    height: 2.4em;
+  }
+  h2 {
+    white-space: nowrap;
+  }
+  .show-title {
+    @include bp(s) {
+      display: inline-block;
+    }
+  }
+  .show-subtitle {
+    display: none;
+    @include bp(sm) {
+      display: inline-block;
+    }
+    @include bp(m) {
+      display: block;
+    }
+    @include bp(ml) {
+      display: inline-block;
+    }
+  }
+  .home & {
+    position: fixed;
+  }
   .nav-stuck & {
     background: $lightgray;
   }
@@ -67,11 +97,24 @@
   }
   span,
   a {
+    margin-right: 0.75em;
     display: inline-block;
-    margin-right: 1rem;
   }
   span:last-of-type {
     margin-right: 0;
+  }
+}
+
+.long {
+  display: none;
+  @include bp(s) {
+    display: inline;
+  }
+}
+.short {
+  display: inline;
+  @include bp(s) {
+    display: none;
   }
 }
 
@@ -80,15 +123,25 @@
 }
 
 .hs__logo {
-  height: 1.2em;
-  left: -2em;
-  position: absolute;
+  height: 1em;
+  position: relative;
+  top: 0.05em;
+  margin-right: 0.2em;
+  @include bp(s) {
+    left: -2em;
+    height: 1.2em;
+    position: absolute;
+  }
 }
 
 .hero {
   position: relative;
-  height: calc(100vh - 2.95em);
-  @include bp(m){
+  font-size: var(--ms-0);
+  height: calc(100vh - 3em);
+  @include bp(m) {
+    height: calc(100vh - 3.5em);
+  }
+  @include bp(l) {
     height: calc(100vh - 4.3em);
   }
   overflow: hidden;

@@ -1,15 +1,21 @@
 .page__content {
   @extend %copy;
-  padding-top: 10rem;
   padding-left: var(--padding);
   padding-right: var(--padding);
+  padding-top: var(--padding);
   display: grid;
-  column-gap: 2em;
-  @include bp(l) {
+  column-gap: var(--padding);
+  padding-bottom: 2em;
+  grid-template-columns: 1fr;
+  @include bp(ml) {
     grid-template-columns: 1fr 1fr;
   }
   section:nth-child(2) {
     max-width: 25em;
+    grid-row: 1;
+    @include bp(ml) {
+      grid-column: 2 / 3;
+    }
     p {
       hyphens: none;
     }

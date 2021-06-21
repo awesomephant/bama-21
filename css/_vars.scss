@@ -58,8 +58,12 @@
     @media (min-width: 45rem) {
       @content;
     }
+  } @else if $point==sm {
+    @media (min-width: 32rem) {
+      @content;
+    }
   } @else if $point==s {
-    @media (min-width: 35rem) {
+    @media (min-width: 26rem) {
       @content;
     }
   }
@@ -82,7 +86,10 @@ $fast: 130ms;
   --ms-4: calc(var(--ms-3) * #{$ratio});
   --ms-5: calc(var(--ms-4) * #{$ratio});
   --ms-6: calc(var(--ms-5) * #{$ratio});
-  --padding: 2.8rem;
+  --padding: 1rem;
+  @include bp(s) {
+    --padding: 2.5rem;
+  }
   @include bp(m) {
     --padding: 4rem;
   }

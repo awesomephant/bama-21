@@ -12,7 +12,6 @@
 }
 
 .site__nav {
-  border-top: 1px solid $black;
   border-bottom: 1px solid $black;
   border-right: 0;
   display: flex;
@@ -21,7 +20,7 @@
   z-index: 1000;
   transition: $fast;
   font-size: var(--ms-0);
-  @include bp(m){
+  @include bp(m) {
     font-size: var(--ms-2);
   }
   .nav-stuck & {
@@ -29,16 +28,20 @@
   }
   .home & {
     top: 0;
-    @include bp(m){
-      top: calc(var(--ms-0) * 2.5 + -1px);
-    }
+    bottom: 0;
+    left: 0;
+    right: 0;
     position: sticky;
+    border-top: 1px solid $black;
+    top: calc(var(--ms-0) * 3.5 + -1px);
+    @include bp(ml) {
+      top: calc(var(--ms-0) * 2.4 + -1px);
+    }
   }
   .about & {
     right: 0;
     left: 0;
-    top: calc(var(--ms-0) * 2.5 + -1px);
-    position: fixed;
+    position: static;
   }
   a {
     display: block;
@@ -48,7 +51,7 @@
     font-weight: 600;
     position: relative;
     padding: 0.8em 1.2em;
-    @include bp(m){
+    @include bp(m) {
       padding: 0.4em 1.2em;
       height: calc(var(--ms-0) * 3.5);
     }
@@ -61,9 +64,9 @@
     }
   }
 }
-.home a[href="/"]{
+.home a[href="/"] {
   @extend %link--current;
 }
-.about a[href*=about]{
+.about a[href*="about"] {
   @extend %link--current;
 }

@@ -103,12 +103,17 @@ function initTweenLines() {
         tweenLines.push(line)
     }
 }
-function initLines() {
+
+function setLineCanvas(){
     c = document.querySelector("#lines").getContext("2d")
     c.canvas.width = window.innerWidth;
     c.canvas.height = window.innerHeight;
     window.settings.x1 = c.canvas.width / 2 - 0;
     window.settings.x2 = c.canvas.width / 2 + 200;
+}
+
+function initLines() {
+    setLineCanvas();
     const yMargin = 300;
     // Init guide lines
     lineA.points = []
@@ -123,11 +128,10 @@ function initLines() {
         console.error("Guide lines must have equal number of points")
         return;
     }
-
     initTweenLines()
-    console.log(`Created ${tweenLines.length} tween lines, ${tweenLines[0].points.length} points/line.`)
     loop()
-    // document.body.appendChild( stats.dom );
 }
+
+window.addEventListener("resize", setLineCanvas)
 
 export { initLines, initTweenLines }

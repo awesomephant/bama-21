@@ -20,20 +20,27 @@ function updateCursor() {
 
     window.requestAnimationFrame(updateCursor)
 }
-function initCursor() {
+
+function setCursorCanvas() {
     c = document.querySelector(".cursor").getContext("2d")
     c.canvas.width = window.innerWidth;
     c.canvas.height = window.innerHeight;
+}
+
+function initCursor() {
     window.addEventListener("touchstart", e => {
         window.hasTouch = true;
     })
     window.addEventListener("mousemove", e => {
-        if (!window.hasTouch){
+        if (!window.hasTouch) {
             cursor.targetX = e.clientX;
             cursor.targetY = e.clientY;
         }
     })
+    setCursorCanvas()
     updateCursor()
 }
+
+window.addEventListener("resize", setCursorCanvas)
 
 export { initCursor }

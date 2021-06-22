@@ -23,7 +23,7 @@ layout: base
   </section>
   <section class="project__images">
     {% for i in gallery%}
-    <img src="{{i.image}}" alt="{{i.alt}}" />
+    <img src="{{i.image | url}}" alt="{{i.alt}}" />
     {% endfor %}
   </section>
 </article>

@@ -4,7 +4,8 @@ class: home
 ---
 {% assign tags = "" | split: "" %}
 {% for p in collections.projects %}
-{% for tag in p.data.tags %}
+{% assign theseTags = p.data.tags | split: ","%}
+{% for tag in theseTags %}
 {% assign taglist = tags | join: "" | downcase %}
 {% assign tag_lower = tag | downcase %}
 {% unless taglist contains tag_lower %}
@@ -42,9 +43,10 @@ class: home
   </div>
   <div class="projects__list">
     {% for p in collections.projects %}
-    <a href="{{p.url}}" class="project__item" data-tags="{% for t in p.data.tags %}{{t | slug}},{%endfor%}">
+    {% assign tags = p.data.tags | split: ","%}
+    <a href="{{p.url | url }}" class="project__item" data-tags="{% for t in tags %}{{t | slug}},{%endfor%}">
       <div class="project__image">
-        <img src="{{p.data.featured_image.image}}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
+        <img src="{{p.data.featured_image.image | url }}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
       </div>
       <h3 class="project__title">{{p.data.title}}</h3>
     </a>

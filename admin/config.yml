@@ -73,7 +73,7 @@ collections:
       - label: Is this a draft?
         name: draft
         widget: boolean
-        default: true
+        default: false
         hint: "Draft projects won't appear on the homepage, but can still be accessed through a direct link."
       - label: "Tags"
         name: "project_tags"

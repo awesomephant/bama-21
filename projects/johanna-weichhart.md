@@ -4,7 +4,7 @@ title: Johanna Weichhart
 project_title: Wegański – Die vegane Szene Warschaus in Bildern, Geschichten und Rezepten
 prof: Nadja Mayer
 draft: false
-tags: Editorial-Design, Buchgestaltung
+tags: Editorial-Design , Buchgestaltung
 links:
   - url: http://www.instagram.com/jowedesign/
 gallery:

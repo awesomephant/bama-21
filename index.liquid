@@ -48,7 +48,7 @@ class: home
     {% for p in collections.projects %}
     {% assign ptags = p.data.project_tags | split: ","%}
     <a href="{{p.url | url }}" class="project__item" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
-      <div class="project__image">
+      <div class="projects__image">
         <img src="{{p.data.featured_image.image | url }}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
       </div>
       <h3 class="project__title">{{p.data.title}}</h3>

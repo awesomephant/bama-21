@@ -20,17 +20,16 @@
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1em;
-    opacity: 0;
-    transition: $fast;
-    &.loaded {
-      opacity: 1;
-    }
+.project__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  transition: $fast;
+  &.loaded {
+    opacity: 1;
   }
 }
 

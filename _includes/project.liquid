@@ -14,7 +14,9 @@ layout: base
         <ul class="project__links">
           {% for l in links %}
           <li>
-            <a href="{{l.url}}">{{l.url}}</a>
+            <a href="{{l.url}}">
+              {{l.url | cleanURL }}
+            </a>
           </li>
           {% endfor %}
         </ul>
@@ -23,7 +25,11 @@ layout: base
   </section>
   <section class="project__images">
     {% for i in gallery%}
-    <img src="{{i.image | url}}" alt="{{i.alt}}" />
+    {% if i.image contains ".mp4" %}
+    <video muted autoplay playsinline loop class="project__image" src="{{i.image | url}}" />
+    {% else %}
+    <img class="project__image" src="{{i.image | url}}" alt="{{i.alt}}" />
+    {% endif %}
     {% endfor %}
   </section>
 </article>

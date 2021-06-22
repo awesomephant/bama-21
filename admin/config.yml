@@ -107,10 +107,11 @@ collections:
         fields:
           - label: Image file
             name: image
-            widget: image
+            hint: JPG, PNG, GIF, and MP4 are supported. Maximum 10MB.
+            widget: file
             media_library:
               config:
-                max_file_size: 5000000
+                max_file_size: 10000000
           - label: Alt text
             name: alt
             widget: string
@@ -123,9 +124,10 @@ collections:
           - label: Image file
             name: image
             widget: "image"
+            hint: "JPG, PNG, and GIF are supported. Maximum 10mb."
             media_library:
               config:
-                max_file_size: 5000000
+                max_file_size: 10000000
           - label: Alt text
             name: alt
             widget: "string"

@@ -21,14 +21,14 @@
   }
   &:hover,
   &:focus {
-    .project__image {
-      background: white;
+    .projects__image {
+      background: white !important;
     }
     img {
       filter: grayscale(0);
     }
   }
-  &:nth-child(2n) .project__image {
+  &:nth-child(2n) .projects__image {
     background: $mint;
   }
 }

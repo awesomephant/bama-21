@@ -4,22 +4,52 @@
 <head>
   {% assign t = "" %}
   {% if title %}
-  {% capture t %}{{title}} / {{site.meta_title}}{% endcapture %}
+  {% capture t %}{{title}} / {{settings.meta_title}}{% endcapture %}
   {% else %}
-  {% assign t = site.meta_title %}
+  {% assign t = settings.meta_title %}
   {% endif %}
+
+  {% assign thumb = "" %}
+  {% if featured_image %}
+  {% assign thumb = featured_image.image | url%}
+  {% else %}
+  {% assign thumb = settings.social_image | url %}
+  {% endif %}
+
+  {% assign thumb_alt = "" %}
+  {% if featured_image %}
+  {% assign thumb_alt = featured_image.alt %}
+  {% else %}
+  {% assign thumb_alt = "" %}
+  {% endif %}
+
+  {% assign desc = "" %}
+  {% if project_title %}
+  {% assign desc = project_title %}
+  {% else %}
+  {% assign desc = settings.meta_description %}
+  {% endif %}
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{t}}</title>
-  <meta name="description" content="{{ site.description }}">
+
+  <meta name="description" content="{{ desc }}">
   <link rel="stylesheet" href="{{"/main.css" | url}}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="@maxakohler">
-  <meta name="twitter:site" content="@maxakohler">
+  <meta name="twitter:creator" content="@HS_Mainz">
+  <meta name="twitter:site" content="@HS_Mainz">
   <meta name="twitter:title" content="{{ t }}">
-  <meta name="twitter:description" content="{{site.description}}">
-  <meta name="twitter:image:src" content="{% if thumb %}{{ thumb }}{% endif %}">
+  <meta name="twitter:description" content="{{desc}}">
+  <meta name="twitter:image:src" content="{{ thumb }}">
+  <meta name="twitter:image:alt" content="{{ thumb_alt }}">
+
+  <meta property="og:title" content="{{t}}">
+  <meta property="og:description" content="{{desc}}">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="{{thumb}}">
+
   <script src="{{"/main.js" | url}}"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
@@ -30,6 +60,7 @@
       font-weight: 600;
       font-display: swap;
     }
+
     @font-face {
       font-family: "modelica";
       src: url({{"/assets/fonts/BwModelicaSS02-Medium.woff2" | url}}) format("woff2");
@@ -37,6 +68,7 @@
       font-weight: 600;
       font-display: swap;
     }
+
     @font-face {
       font-family: "modelica";
       src: url({{"/assets/fonts/BwModelicaSS02-Bold.woff" | url}}) format("woff");
@@ -44,6 +76,7 @@
       font-weight: 800;
       font-display: swap;
     }
+
     @font-face {
       font-family: "modelica";
       src: url({{"/assets/fonts/BwModelicaSS02-Bold.woff2" | url}}) format("woff2");

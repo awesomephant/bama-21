@@ -59,7 +59,7 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "project"
-      - label: "Title"
+      - label: "Student Name"
         name: "title"
         widget: "string"
       - label: "Project Title"
@@ -74,11 +74,10 @@ collections:
         name: draft
         widget: boolean
         default: true
-        hint: "Draft projects won't appear on the homepage, but can still be accessed through a direct link.
-          "
+        hint: "Draft projects won't appear on the homepage, but can still be accessed through a direct link."
       - label: "Tags"
         name: "tags"
-        widget: "list"
+        widget: "string"
         hint: "Separate multiple tags by comma."
         required: false
       - label: "Description"
@@ -115,6 +114,7 @@ collections:
           - label: Alt text
             name: alt
             widget: string
+            required: false
       - label: Featured Image
         required: false
         name: featured_image
@@ -130,4 +130,5 @@ collections:
                 max_file_size: 10000000
           - label: Alt text
             name: alt
+            required: false
             widget: "string"

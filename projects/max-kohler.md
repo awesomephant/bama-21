@@ -4,9 +4,7 @@ title: Max Kohler
 project_title: White Noise Poster
 prof: Professor Xavier
 draft: false
-tags:
-  - Typography
-  - Advertising
+project_tags: "Typography"
 links:
   - url: https://twitter.com/maxakohler
   - url: https://maxkoehler.com/

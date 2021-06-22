@@ -76,7 +76,7 @@ collections:
         default: true
         hint: "Draft projects won't appear on the homepage, but can still be accessed through a direct link."
       - label: "Tags"
-        name: "tags"
+        name: "project_tags"
         widget: "string"
         hint: "Separate multiple tags by comma."
         required: false

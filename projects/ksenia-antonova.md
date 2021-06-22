@@ -3,8 +3,8 @@ layout: project
 title: Ksenia Antonova
 project_title: SimpleFly - Eine App zur Vereinfachung des Reiseprozesses
 prof: Prof. Reckter
-draft: true
-tags: Web, UX
+draft: false
+project_tags: Web, UX
 links:
   - url: https://www.instagram.com/ksenia_antonovart/
 gallery:

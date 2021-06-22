@@ -3,8 +3,10 @@ layout: base
 class: home
 ---
 {% assign tags = "" | split: "" %}
+
 {% for p in collections.projects %}
-{% assign theseTags = p.data.tags | split: ","%}
+{% assign theseTags = p.data.project_tags | split: ","%}
+
 {% for tag in theseTags %}
 {% assign taglist = tags | join: "" | downcase %}
 {% assign tag_lower = tag | downcase %}
@@ -14,6 +16,7 @@ class: home
 {% endunless %}
 {% endunless %}
 {% endfor %}
+
 {% endfor %}
 
 <section class="hero">
@@ -43,8 +46,8 @@ class: home
   </div>
   <div class="projects__list">
     {% for p in collections.projects %}
-    {% assign tags = p.data.tags | split: ","%}
-    <a href="{{p.url | url }}" class="project__item" data-tags="{% for t in tags %}{{t | slug}},{%endfor%}">
+    {% assign ptags = p.data.project_tags | split: ","%}
+    <a href="{{p.url | url }}" class="project__item" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
       <div class="project__image">
         <img src="{{p.data.featured_image.image | url }}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
       </div>

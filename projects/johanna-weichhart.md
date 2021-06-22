@@ -8,6 +8,8 @@ tags: Editorial-Design, Buchgestaltung
 links:
   - url: http://www.instagram.com/jowedesign/
 gallery:
+  - image: /assets/uploads/weichhart_johanna_01.jpg
+    alt: Magazinseite von Johanna Weichhart
   - image: /assets/uploads/weichhart_johanna_02.jpg
     alt: Magazinseite von Johanna Weichhart
   - image: /assets/uploads/weichhart_johanna_03.jpg

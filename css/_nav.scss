@@ -29,7 +29,7 @@
   .home & {
     border-top: 1px solid $black;
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
   }
@@ -66,7 +66,7 @@
     }
   }
 }
-.home a[href="/"] {
+.home a[href="/sose21/"] {
   @extend %link--current;
 }
 .about a[href*="about"] {

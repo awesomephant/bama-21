@@ -23,6 +23,12 @@ collections:
             required: false
             buttons: [bold, italic, link, bulleted-list, numbered-list, heading-two]
             editor_components: []
+          - label: "Legal text"
+            name: "legal_copy"
+            widget: "markdown"
+            required: false
+            buttons: [bold, italic, link, bulleted-list, numbered-list, heading-two]
+            editor_components: []
           - label: "Ticket Link"
             name: "ticket_link"
             widget: "string"

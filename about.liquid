@@ -8,6 +8,10 @@ class: about
 <article class="page__content">
   <section>
     {{settings.about_copy_left | renderMarkdown }}
+    <details>
+      <summary>Impressum</summary>
+      {{settings.legal_copy | renderMarkdown}}
+    </details>
   </section>
   <section>
     {{settings.about_copy_right | renderMarkdown }}

@@ -12,6 +12,7 @@ gallery:
     alt: "Created Identities: Blind Admiration Gets Us Nowhere"
 featured_image:
   image: /assets/uploads/identity_cover.jpg
+  alt: "Created Identities: Blind Admiration Gets Us Nowhere"
 ---
 Identity in its entirety would be the centre of the self, the first and most defining state of mind which translates our world view into something tangible; a visual, phonetic and physical language. The current climate has made of our identity a silenced voice within a world underlying too much stress and chaos. We’re registered, categorised, our lives get more and more individual, biased and polarised. We lack a sense of belonging and togetherness. Instead we develop online and learn about ourselves with the help of AI. Essentially we’re living in parallel worlds while being static and without possibilities of change. 
 

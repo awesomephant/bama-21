@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Elpida Tsaousidis
-project_title: „Im Bad hat es immer nach Rosen geduftet - Eine künstlerische
-  Auseinandersetzung zum Thema Erinnerungen“
+project_title: Im Bad hat es immer nach Rosen geduftet - Eine künstlerische
+  Auseinandersetzung zum Thema Erinnerungen
 prof: Prof. Kirstin Arndt
 draft: false
 project_tags: Installation, Skulptur, Projektion, Ausstellung

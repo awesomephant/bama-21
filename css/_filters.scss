@@ -15,7 +15,9 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity $fast, backdrop-filter $fast;
+  visibility: hidden;
   &.active {
+    visibility: visible;
     pointer-events: all;
     backdrop-filter: blur(4px);
     opacity: 1;

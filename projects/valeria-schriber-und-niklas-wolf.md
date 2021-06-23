@@ -4,7 +4,7 @@ title: Valeria Schriber und Niklas Wolf
 project_title: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
 prof: Prof. Dr. Isabel Naegele-Spamer
 draft: false
-project_tags: Ausstellung, Druck, Animation
+project_tags: Exhibition-Design, Editorial, Typografie
 links:
   - url: https://typeandchairs.de
   - url: https://www.youtube.com/watch?v=lfpZ-IY4gYs

@@ -36,6 +36,7 @@ $fast: 130ms;
 
 :root {
   --ms-0: clamp(1rem, calc(1.3vw + 0.2rem), 1.2rem);
+  --ms--2: calc(var(--ms--1) / #{$ratio});
   --ms--1: calc(var(--ms-0) / #{$ratio});
   --ms-1: calc(var(--ms-0) * #{$ratio});
   --ms-2: calc(var(--ms-1) * #{$ratio});

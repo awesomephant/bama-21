@@ -10,7 +10,9 @@ class: about
     {{settings.about_copy_left | renderMarkdown }}
     <details class="about__legal">
       <summary>Impressum</summary>
-      {{settings.legal_copy | renderMarkdown}}
+      <div class="legal__content">
+        {{settings.legal_copy | renderMarkdown}}
+      </div>
     </details>
   </section>
   <section>

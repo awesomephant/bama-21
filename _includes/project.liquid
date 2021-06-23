@@ -1,26 +1,27 @@
 ---
 layout: base
+class: single
 ---
 
+{% include nav.liquid %}
 <article class="single-project">
   <section class="project__copy">
-    {% include nav.liquid %}
     <div class="project__text">
       <h2 class="project__person">{{title}}</h2>
       <h3 class="project__title">{{project_title}}</h3>
-      <p class="project__supervisor">{{prof}}</p>
+      <p class="project__supervisor">Betreuung: {{prof}}</p>
       <div class="project__body">
         {{content}}
-        <ul class="project__links">
-          {% for l in links %}
-          <li>
-            <a href="{{l.url}}">
-              {{l.url | cleanURL }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
       </div>
+      <ul class="project__links">
+        {% for l in links %}
+        <li>
+          <a href="{{l.url}}">
+            {{l.url | cleanURL }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
   <section class="project__images">

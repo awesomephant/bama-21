@@ -1,27 +1,52 @@
+.single {
+  max-height: 100vh;
+}
 .single-project {
+  flex-grow: 1;
   display: flex;
+  flex-flow: column;
   font-size: var(--ms-0);
+  @include bp(ml) {
+    flex-flow: row;
+  }
 }
 
 .project__images,
 .project__copy {
   flex-basis: 50%;
-  height: 100vh;
-  overflow-y: auto;
   flex-grow: 1;
-  padding-top: calc(2.5em - 1px);
+  padding-top: 2em;
+  overflow-y: auto;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  @include bp(ml) {
+    max-height: calc(100vh - 6em);
+  }
 }
 
 .project__images {
-  padding-left: 1em;
-  padding-top: 3.5em;
-  padding-right: var(--padding);
+  @include bp(ml) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
+.project__links {
+  padding-top: 0.5em;
+  li {
+    list-style: none;
+  }
+  a {
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
+    border: 1px solid currentColor;
+    display: inline-block;
+  }
+}
 .project__image {
   display: block;
   max-width: 100%;
@@ -34,23 +59,19 @@
 }
 
 .project__copy {
-  border-right: 1px solid $black;
-  position: relative;
-  .site__nav {
-    left: 0;
-    top: 0;
-    right: 0;
+  @include bp(ml) {
+    padding-right: 1rem;
+    border-right: 1px solid $black;
   }
 }
 
 .project__text {
   @extend %copy;
-  padding-left: var(--padding);
-  padding-top: var(--padding);
   padding-right: 1em;
 }
 
 .project__body {
+  padding-top: 1em;
   p,
   ul,
   ol {
@@ -83,5 +104,7 @@
 }
 .project__title {
   font-weight: 600;
-  font-size: var(--ms-0);
+  font-size: var(--ms-1);
+  line-height: 1.35;
+  hyphens: none;
 }

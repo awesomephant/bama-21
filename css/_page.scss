@@ -21,3 +21,21 @@
     }
   }
 }
+
+.about__legal {
+  margin-top: 2em;
+  summary {
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    display: inline-block;
+    padding: .2em .4em;
+    cursor: pointer;
+    font-size: var(--ms-0);
+    margin-bottom: .5em;
+  }
+  font-size: var(--ms--1);
+  ul {
+    margin-left: 1.2em;
+    margin-bottom: .5em;
+  }
+}

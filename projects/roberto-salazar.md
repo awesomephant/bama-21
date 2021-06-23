@@ -10,6 +10,8 @@ links:
 gallery:
   - image: /assets/uploads/identity_cover.jpg
     alt: "Created Identities: Blind Admiration Gets Us Nowhere"
+  - image: /assets/uploads/identity_cover2.jpg
+    alt: "Created Identities: Blind Admiration Gets Us Nowhere"
 featured_image:
   image: /assets/uploads/identity_cover.jpg
   alt: "Created Identities: Blind Admiration Gets Us Nowhere"

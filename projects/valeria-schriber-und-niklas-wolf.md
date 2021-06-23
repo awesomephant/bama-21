@@ -10,7 +10,8 @@ links:
   - url: https://www.youtube.com/watch?v=lfpZ-IY4gYs
   - url: https://www.instagram.com/typeandchairs/
 gallery:
-  - image: /assets/uploads/_mg_4069.jpg
+  - image: /assets/uploads/dsc_4300.jpg
+  - image: /assets/uploads/_mg_4120.jpg
     alt: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
   - image: /assets/uploads/_mg_4321.jpg
     alt: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
@@ -18,7 +19,6 @@ gallery:
     alt: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
   - image: /assets/uploads/dsc_3907.jpg
     alt: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
-  - image: /assets/uploads/dsc_4300.jpg
   - image: /assets/uploads/eingang.jpg
     alt: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
   - image: /assets/uploads/img_4485.jpg

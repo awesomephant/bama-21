@@ -1,7 +1,6 @@
 .projects {
   padding: 0 var(--padding);
   padding-bottom: 5%;
-  min-height: 200vh;
   position: relative;
 }
 
@@ -10,6 +9,7 @@
   display: inline-block;
   margin-right: 1em;
   text-decoration: none;
+  margin-bottom: 1em;
   &.hidden {
     display: none;
   }
@@ -36,7 +36,7 @@
 .projects__image {
   margin-bottom: 0.2em;
   background: $orange;
-  height: 10em;
+  height: 12em;
   display: inline-block;
   transition: $fast;
   border: 1px solid white;

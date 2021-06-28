@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Sirvan Rüstemoglu
-
+course: BA
 project_title: navên a-z
 prof: Prof. Johannes Bergerhausen
 draft: false

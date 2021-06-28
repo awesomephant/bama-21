@@ -4,7 +4,7 @@ title: Julia Reif
 project_title: Monte Kali - vom weißen Berg und der Reise zum Grund
 prof: Prof. Kirstin Arndt
 draft: false
-project_tags: Freies Gestalten, Ausstellung
+project_tags: Freie Gestaltung, Ausstellung
 links:
   - url: www.instagram.com/tomatensauce
 gallery:

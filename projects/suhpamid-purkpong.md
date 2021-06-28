@@ -6,9 +6,6 @@ prof: Prof. Anna-Lisa Schönecker
 draft: false
 links:
   - url: https://www.instagram.com/ultimacolor/
-featured_image:
-  alt: Non-Player Society
-  image: /assets/uploads/aqwaevj8_400x400.jpg
 ---
 Im Alltag orientieren wir uns oft unbewusst mit der Hilfe von verschiedenen Leitsystemen, in der analogen genau wie in der digitalen Welt. Straßenverkehr, Smartphone und der Flur im Bürgerbüro –  sie alle sind gespickt mit Icons und Symbolen. Je nach Sozialisation  erschließen sich uns solche Systeme fast selbstverständlich. Woher kommt unser Verständnis für neu entwickelte Symbole zur Ausführung digitaler Funktionen?
 

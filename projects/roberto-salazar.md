@@ -4,7 +4,7 @@ title: Roberto Salazar
 project_title: "Created Identities: Blind Admiration Gets Us Nowhere"
 prof: Prof. Kirstin Arndt
 draft: false
-project_tags: Freies Gestalten, Ausstellung
+project_tags: Freie Gestaltung, Ausstellung
 links:
   - url: www.instagram.com/r.obertosalaz.ar
 gallery:

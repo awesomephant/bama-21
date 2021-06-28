@@ -4,7 +4,7 @@ title: Christopher Theophanous
 project_title: Re:set. Practice-led framework for working with historical type.
 prof: Prof. Johannes Bergerhausen
 draft: false
-project_tags: Installation, Website
+project_tags: Installation, Webdesign
 links:
   - url: www.re-set.space
   - url: www.instagram.com/i_m794005231

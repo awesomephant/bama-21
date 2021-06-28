@@ -5,7 +5,7 @@ project_title: "Datenleben?! - Wie digitale Daten unser Leben bestimmen, warum
   uns das betrifft und was wir daraus lernen können "
 prof: Prof. Florian Jenett
 draft: false
-project_tags: Web
+project_tags: Webdesign
 links:
   - url: www.instagram.com/manuelrrrrau/
 gallery:

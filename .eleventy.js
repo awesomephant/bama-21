@@ -15,6 +15,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("cleanURL", function (url) {
     return url.replace(/(https?:\/\/)|(www.)|(\/$)/g, "");
   });
+  eleventyConfig.addFilter("cleanURL", function (url) {
+    return url.replace(/(https?:\/\/)|(www.)|(\/$)/g, "");
+  });
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("favicon-16x16.png");

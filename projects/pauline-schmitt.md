@@ -5,7 +5,7 @@ project_title: Danke, mir geht‘s beschissen! Illustrationen zu
   Erfahrungsberichten depressiver Menschen
 prof: Tatjana Prenzel
 draft: false
-project_tags: Illustration, Web
+project_tags: Illustration, Webdesign
 links:
   - url: www.dankemirgehtsbeschissen.de
 gallery:

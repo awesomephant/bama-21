@@ -8,13 +8,15 @@ class: home
 {% assign theseTags = p.data.project_tags | split: ","%}
 
 {% for tag in theseTags %}
-{% assign taglist = tags | join: "" | downcase %}
-{% assign tag_lower = tag | downcase %}
+{% assign taglist = tags | join: ";" %}
+{% assign tag_lower = tag | downcase | strip %}
+
 {% unless taglist contains tag_lower %}
-{% unless p.data.draft == true %}
-{% assign tags = tags | concat: tag%}
+  {% if tag_lower != "undefined" %}
+  {% assign tags = tags | concat: tag_lower%}
+  {% endif %}
 {% endunless %}
-{% endunless %}
+
 {% endfor %}
 
 {% endfor %}
@@ -49,7 +51,9 @@ class: home
     {% assign ptags = p.data.project_tags | split: ","%}
     <a href="{{p.url | url }}" class="project__item" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
       <div class="projects__image">
+        {% if p.data.featured_image.image %}
         <img src="{{p.data.featured_image.image | url }}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
+        {% endif %}
       </div>
       <h3 class="project__title">{{p.data.title}}</h3>
     </a>

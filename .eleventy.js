@@ -10,8 +10,13 @@ module.exports = function (eleventyConfig) {
   }
 
   eleventyConfig.addCollection("projects", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./projects/*.md");
+    return collectionApi.getFilteredByGlob(["./projects/*.md"]).sort(function (a, b) {
+      if (a.data.title > b.data.title) return 1;
+      else if (a.data.title < b.data.title) return -1;
+      else return 0;
+    });
   });
+
   eleventyConfig.addFilter("cleanURL", function (url) {
     return url.replace(/(https?:\/\/)|(www.)|(\/$)/g, "");
   });

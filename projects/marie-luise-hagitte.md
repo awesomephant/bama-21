@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Marie-Luise Hagitte
+course: BA
 project_title: Neuer Denkraum//Magazin
 prof: Prof. Charlotte Schröner
 draft: false

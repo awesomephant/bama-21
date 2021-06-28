@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Tatiana Kiel
+course: BA
 project_title: Femzine
 prof: Marcel Teine
 draft: false

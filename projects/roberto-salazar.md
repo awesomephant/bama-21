@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Roberto Salazar
+course: BA
 project_title: "Created Identities: Blind Admiration Gets Us Nowhere"
 prof: Prof. Kirstin Arndt
 draft: false

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Isabella Lang
+course: BA
 project_title: Noba – Ein Guide zu barrierefreiem App-Design
 prof: Prof. Anna-Lisa Schönecker
 draft: false

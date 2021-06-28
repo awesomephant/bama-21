@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Julia Ruhmann
+course: BA
 project_title: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
 prof: Prof. Nadja Mayer
 draft: false

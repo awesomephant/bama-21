@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Ksenia Antonova
+course: BA
 project_title: SimpleFly - Eine App zur Vereinfachung des Reiseprozesses
 prof: Prof. Reckter
 draft: false

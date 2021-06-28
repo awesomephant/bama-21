@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Jessica Kissel
+course: BA
 project_title: Herr Twardowski
 prof: Seda Demiriz, Tatjana Prenzel
 draft: false

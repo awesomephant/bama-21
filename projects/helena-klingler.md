@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Helena Klingler
+course: BA
 project_title: Unsichtbare Tage
 prof: Prof. Nadja Mayer
 draft: false

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Pauline Schmitt
+course: BA
 project_title: Danke, mir geht‘s beschissen! Illustrationen zu
   Erfahrungsberichten depressiver Menschen
 prof: Tatjana Prenzel

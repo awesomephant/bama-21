@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Kathrin Jobst
+course: BA
 project_title: "Kathrin und Fred. Oder: Bin ich vielleicht aus Versehen jemand
   anders geworden?"
 prof: Prof. Nadja Mayer

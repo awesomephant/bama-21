@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Rebecca Hässelbarth
+course: BA
 project_title: KI im Design. Ein Selbstversuch
 prof: Prof. Charlotte Schröner, Prof. Stefan Enders
 draft: false

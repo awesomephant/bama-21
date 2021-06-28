@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Esteban Barco
+course: BA
 project_title: Creative Twines – An interactive learning method for creative competencies
 prof: Marcel Teine
 draft: false

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Thi Thao Huyen Nguyen
+course: BA
 project_title: Pack mich ein - Verpackungsdesign in Deutschland und Vietnam
 prof: Prof. Charlotte Schröner
 draft: false

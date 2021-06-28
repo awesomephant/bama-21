@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Rona Patzler
+course: BA
 project_title: UX Basis - Eine App für den Einstieg in die Welt der User Experience
 prof: Marcel Teine
 draft: false

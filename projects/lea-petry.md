@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Lea Petry
+course: BA
 project_title: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des Körpers
 prof: Prof. Stefan Enders
 draft: false

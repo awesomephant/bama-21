@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Janina Sophia Neth
+course: BA
 project_title: Macht das Syn?
 prof: Prof. Anna-Lisa Schönecker
 draft: false

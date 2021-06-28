@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Leonie Neuhäusel
+course: BA
 project_title: Blindsight Feelings
 prof: Prof. Dr. Isabel Naegele-Spamer
 draft: false

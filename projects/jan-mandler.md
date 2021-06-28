@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Jan Mandler
+course: BA
 project_title: Außer Reichweite von Kindern aufbewahren
 prof: Prof. Philipp Pape
 draft: false

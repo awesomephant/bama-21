@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Yehia Mallallah
+course: BA
 project_title: Dow, Dax & Co – Eine öffentlichkeitswirksame Werbekampagne zur
   Imagesteigerung der Börse
 prof: Prof. Charlotte Schröner

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Christopher Theophanous
+course: BA
 project_title: Re:set. Practice-led framework for working with historical type.
 prof: Prof. Johannes Bergerhausen
 draft: false

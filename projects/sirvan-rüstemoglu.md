@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Sirvan Rüstemoglu
+
 project_title: navên a-z
 prof: Prof. Johannes Bergerhausen
 draft: false

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Johanna Weichhart
+course: BA
 project_title: Wegański – Die vegane Szene Warschaus in Bildern, Geschichten und Rezepten
 prof: Nadja Mayer
 draft: false

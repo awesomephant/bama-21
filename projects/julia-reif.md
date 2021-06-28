@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Julia Reif
+course: BA
 project_title: Monte Kali - vom weißen Berg und der Reise zum Grund
 prof: Prof. Kirstin Arndt
 draft: false

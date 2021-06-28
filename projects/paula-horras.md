@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Paula Horras
+course: BA
 project_title: Die gute Nachricht ist…
 prof: Tatjana Prenzel, Seda Demiriz
 draft: false

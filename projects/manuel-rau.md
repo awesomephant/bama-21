@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Manuel Rau
+course: BA
 project_title: "Datenleben?! - Wie digitale Daten unser Leben bestimmen, warum
   uns das betrifft und was wir daraus lernen können "
 prof: Prof. Florian Jenett

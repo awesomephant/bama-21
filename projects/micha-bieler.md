@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Micha Bieler
+course: BA
 project_title: Mimo & Friends
 prof: Prof. Nadja Mayer
 draft: false

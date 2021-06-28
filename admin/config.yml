@@ -68,6 +68,10 @@ collections:
       - label: "Student Name"
         name: "title"
         widget: "string"
+      - label: "Kurs"
+        name: "course"
+        widget: "select"
+        options: ["BA", "MA"]
       - label: "Project Title"
         name: "project_title"
         widget: "string"

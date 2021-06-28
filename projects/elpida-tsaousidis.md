@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Elpida Tsaousidis
+course: BA
 project_title: Im Bad hat es immer nach Rosen geduftet - Eine künstlerische
   Auseinandersetzung zum Thema Erinnerungen
 prof: Prof. Kirstin Arndt

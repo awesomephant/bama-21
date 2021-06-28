@@ -4,6 +4,7 @@ title: Anna Stähler
 project_title: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
 draft: false
 project_tags: Buchgestaltung
+course: MA
 gallery:
   - image: /assets/uploads/anna-stähler.mp4
     alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen

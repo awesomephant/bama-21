@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Yannik Rapp
+course: BA
 project_title: Plakat³- ein interdisziplinärer Ansatz
 prof: Prof. Holger Reckter
 draft: false

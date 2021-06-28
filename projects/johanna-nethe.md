@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Johanna Nethe
+course: BA
 project_title: Korrelat – zwischen analog und digital
 prof: Prof. Dr. Isabel Naegele-Spamer
 draft: false

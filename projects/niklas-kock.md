@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Niklas Kock
+course: BA
 project_title: F42.2 – Zwangsgedanken und -handlungen, gemischt
 prof: Prof. Stefan Enders
 draft: false

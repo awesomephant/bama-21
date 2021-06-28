@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Laila Böcker
+course: BA
 project_title: Prostitution. A Matter of Race, Class and Gender.
 prof: Prof. Charlotte Schröner, Prof. Stefan Enders
 draft: false

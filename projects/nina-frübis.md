@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Nina Frübis
+course: BA
 project_title: sorry spoiler_Gründung einer nachhaltigen Modemarke
 prof: Prof. Nadja Mayer
 draft: false

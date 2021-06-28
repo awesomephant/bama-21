@@ -1,6 +1,7 @@
 ---
 layout: project
-title: "Claudia Jusczyk "
+title: "Claudia Jusczyk"
+course: BA
 project_title: Fantasfisch – ein nachhaltiger, fantastischer Fisch in und aus deiner Region
 prof: Julia Kühne
 draft: false

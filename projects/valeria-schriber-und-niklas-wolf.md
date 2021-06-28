@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Valeria Schriber und Niklas Wolf
+course: BA
 project_title: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
 prof: Prof. Dr. Isabel Naegele-Spamer
 draft: false

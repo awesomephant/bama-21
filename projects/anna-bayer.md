@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Anna Bayer
+course: BA
 project_title: Hochgekrempelte Jeans
 prof: Tatjana Prenzel, Seda Demiriz
 draft: false

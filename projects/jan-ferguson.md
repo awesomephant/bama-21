@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Jan Ferguson
+course: BA
 project_title: whiteout virtual space – Digitales Ausstellungskonzept zwischen Kunst
 prof: Prof. Dr. Petra Eisele
 draft: false

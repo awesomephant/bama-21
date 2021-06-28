@@ -1,5 +1,6 @@
 ---
 layout: project
+course: BA
 title: Suhpamid Purkpong
 project_title: Non-Player Society
 prof: Prof. Anna-Lisa Schönecker

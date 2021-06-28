@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Alexander von Holtum
+course: BA
 project_title: Der rastlose Körper - zur Bedeutung des Schlafs im Spätkapitalismus
 prof: Prof. Kirstin Arndt
 draft: false

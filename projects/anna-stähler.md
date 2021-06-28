@@ -24,7 +24,7 @@ gallery:
   - image: /assets/uploads/anna-stähler_ma-9.jpg
     alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
 featured_image:
-  image: /assets/uploads/bieler_micha_bild_5.jpg
+  image: /assets/uploads/anna-stähler_ma-6.jpg
   alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
 ---
 Heimatlosigkeit. Heimatzerstörung. Heimatvertreibung. Heimatverlust — prägende Worte für die Erfahrungen einer der bisher größten Zuwanderungsgruppe in Deutschland. Mit dem Aufruf einer Deutschen auf dem russischen Thron — Katharina die Große — die ihre Landsleute ins weite Land lockte, begann vor ca. 260 Jahren die Geschichte der Russlanddeutschen — eine Geschichte, gekennzeichnet von einer ständigen (Aus-)Wanderung.

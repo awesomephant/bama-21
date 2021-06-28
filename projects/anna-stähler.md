@@ -4,6 +4,25 @@ title: Anna Stähler
 project_title: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
 draft: false
 project_tags: Buchgestaltung
+gallery:
+  - image: /assets/uploads/anna-stähler.mp4
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-1.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-2.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-3.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-4.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-5.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-6.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-7.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
+  - image: /assets/uploads/anna-stähler_ma-9.jpg
+    alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
 featured_image:
   image: /assets/uploads/bieler_micha_bild_5.jpg
   alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen

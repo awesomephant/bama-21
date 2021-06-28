@@ -97,6 +97,15 @@
   margin-bottom: 0.2em;
 }
 
+.project__course {
+  background-color: white;
+  font-size: var(--ms-0);
+  padding: .01em .3em;
+  border-radius: $br;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .project__supervisor {
   font-size: var(--ms-0);
   margin-bottom: 1.5em;

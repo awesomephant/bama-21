@@ -9,7 +9,9 @@ class: single
     <div class="project__text">
       <h2 class="project__person">{{title}}</h2>
       <h3 class="project__title">{{project_title}}</h3>
+      {% if prof %}
       <p class="project__supervisor">Betreuung: {{prof}}</p>
+      {% endif %}
       <div class="project__body">
         {{content}}
       </div>
@@ -27,7 +29,7 @@ class: single
   <section class="project__images">
     {% for i in gallery%}
     {% if i.image contains ".mp4" %}
-    <video muted autoplay playsinline loop class="project__image" src="{{i.image | url}}" />
+    <video muted autoplay playsinline loop class="project__image" src="{{i.image | url}}"></video>
     {% else %}
     <img class="project__image" src="{{i.image | url}}" alt="{{i.alt}}" />
     {% endif %}

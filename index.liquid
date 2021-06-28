@@ -12,9 +12,9 @@ class: home
 {% assign tag_lower = tag | downcase | strip %}
 
 {% unless taglist contains tag_lower %}
-  {% if tag_lower != "undefined" %}
-  {% assign tags = tags | concat: tag_lower%}
-  {% endif %}
+{% if tag_lower != "undefined" %}
+{% assign tags = tags | concat: tag_lower%}
+{% endif %}
 {% endunless %}
 
 {% endfor %}
@@ -30,21 +30,23 @@ class: home
 <section class="projects">
   <div class="intersection-sentry"></div>
   <button class="filters__open">Filter</button>
-  <div class="filters">
-    <button class="filters__close">
-      {% include close.svg %}
-      Schlißeen
-    </button>
-    <ul class="filters__tags">
-      <li>
-        <button class="active" data-filter="all">Alles</button>
-      </li>
-      {%for tag in tags %}
-      <li>
-        <button data-filter="{{tag | slug}}">{{tag}}</button>
-      </li>
-      {% endfor %}
-    </ul>
+  <div class="filters active">
+    <div class="filters__inner">
+      <button class="filters__close">
+        {% include close.svg %}
+        Schlißeen
+      </button>
+      <ul class="filters__tags">
+        <li>
+          <button class="active" data-filter="all">Alles</button>
+        </li>
+        {%for tag in tags %}
+        <li>
+          <button data-filter="{{tag | slug}}">{{tag}}</button>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
   <div class="projects__list">
     {% for p in collections.projects %}

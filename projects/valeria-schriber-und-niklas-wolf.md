@@ -5,7 +5,7 @@ course: BA
 project_title: Type & Chairs Ausstellung – Stühle und Schriften im Vergleich
 prof: Prof. Dr. Isabel Naegele-Spamer
 draft: false
-project_tags: Exhibition-Design, Editorial, Typografie
+project_tags: Ausstellung, Editorial, Typografie
 links:
   - url: https://typeandchairs.de
   - url: https://www.youtube.com/watch?v=lfpZ-IY4gYs

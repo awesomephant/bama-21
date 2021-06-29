@@ -11,6 +11,8 @@ links:
 gallery:
   - image: /assets/uploads/isabella_lang_1.jpg
     alt: Noba – Ein Guide zu barrierefreiem App-Design
+  - image: /assets/uploads/isabella_lang_2.jpg
+    alt: Noba – Ein Guide zu barrierefreiem App-Design
 featured_image:
   image: /assets/uploads/isabella_lang_2.jpg
   alt: Noba – Ein Guide zu barrierefreiem App-Design

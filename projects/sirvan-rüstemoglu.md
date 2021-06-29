@@ -5,7 +5,7 @@ course: BA
 project_title: navên a-z
 prof: Prof. Johannes Bergerhausen
 draft: false
-project_tags: Webdesign, UX-Design
+project_tags: Webdesign, UX Design
 links:
   - url: www.instagram.com/sirvan_rue/
 gallery:

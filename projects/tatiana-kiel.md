@@ -5,7 +5,7 @@ course: BA
 project_title: Femzine
 prof: Marcel Teine
 draft: false
-project_tags: Editorial Design, UX-Design
+project_tags: Editorial Design, UX Design
 links:
   - url: www.instagram.com/tanja.kiel/
 gallery:

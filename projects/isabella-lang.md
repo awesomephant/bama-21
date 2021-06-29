@@ -5,7 +5,7 @@ course: BA
 project_title: Noba – Ein Guide zu barrierefreiem App-Design
 prof: Prof. Anna-Lisa Schönecker
 draft: false
-project_tags: Webdesign, UX-Design
+project_tags: Webdesign, UX Design
 links:
   - url: www.instagram.com/isabellalng/
 gallery:

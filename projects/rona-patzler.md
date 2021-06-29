@@ -5,7 +5,7 @@ course: BA
 project_title: UX Basis - Eine App für den Einstieg in die Welt der User Experience
 prof: Marcel Teine
 draft: false
-project_tags: Webdesign, UX-Design
+project_tags: Webdesign, UX Design
 links:
   - url: https://www.linkedin.com/in/rona-patzler-75bb76113/
 gallery:

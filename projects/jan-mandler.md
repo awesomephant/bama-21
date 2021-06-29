@@ -5,7 +5,7 @@ course: BA
 project_title: Außer Reichweite von Kindern aufbewahren
 prof: Prof. Philipp Pape
 draft: false
-project_tags: Webdesign, UX-Design
+project_tags: Webdesign, UX Design
 gallery:
   - image: /assets/uploads/jan_mandler_bild_1.jpg
     alt: Außer Reichweite von Kindern aufbewahren

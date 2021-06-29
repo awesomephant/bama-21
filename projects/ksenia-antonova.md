@@ -5,7 +5,7 @@ course: BA
 project_title: SimpleFly - Eine App zur Vereinfachung des Reiseprozesses
 prof: Prof. Reckter
 draft: false
-project_tags: Webdesign, UX-Design
+project_tags: Webdesign, UX Design
 links:
   - url: https://www.instagram.com/ksenia_antonovart/
 gallery:

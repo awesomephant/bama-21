@@ -5,6 +5,7 @@ project_title: Russlanddeutsche  —  wer reisen muss, kann viel erzählen
 draft: false
 project_tags: Buchgestaltung
 course: MA
+prof: Prof. Monika Aichele, Eberhard Kirchhoff, Prof. Dr. Matthias Riedel, Prof. Charlotte Schröner
 gallery:
   - image: /assets/uploads/anna-stähler.mp4
     alt: Russlanddeutsche  —  wer reisen muss, kann viel erzählen

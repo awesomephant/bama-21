@@ -35,6 +35,40 @@
   align-items: flex-start;
 }
 
+.video__container {
+  position: relative;
+}
+.video__mute {
+  display: none;
+  [data-has-audio="true"] & {
+    display: block;
+  }
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0;
+  appearance: none;
+  background-color: rgb(white, .8);
+  border-radius: $br;
+  border: 0;
+  padding: 0 .2rem;
+  cursor: pointer;
+  .volume-mute {
+    display: none;
+  }
+  .volume-high {
+    display: block;
+  }
+  .is-muted & {
+    .volume-high {
+      display: none;
+    }
+    .volume-mute {
+      display: block;
+    }
+  }
+}
+
 .project__links {
   padding-top: 0.5em;
   li {
@@ -94,26 +128,34 @@
 .project__person {
   font-size: var(--ms-3);
   font-weight: 600;
-  margin-bottom: 0.2em;
+  margin-top: 0.75em;
+  margin-bottom: 0.1em;
 }
 
 .project__course {
-  background-color: white;
   font-size: var(--ms-0);
-  padding: .01em .3em;
-  border-radius: $br;
-  display: inline-block;
-  vertical-align: middle;
+  margin-bottom: .5em;
 }
 
-.project__supervisor {
+p.project__supervisor {
   font-size: var(--ms-0);
-  margin-bottom: 1.5em;
   font-weight: 600;
+  margin-bottom: 0;
+  span {
+    display: inline-block;
+
+    &:after {
+      content: ",";
+    }
+    &:last-of-type:after {
+      content: "";
+    }
+  }
 }
 .project__title {
   font-weight: 600;
   font-size: var(--ms-1);
   line-height: 1.35;
+  margin-bottom: 0.2em;
   hyphens: none;
 }

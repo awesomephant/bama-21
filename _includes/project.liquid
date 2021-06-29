@@ -9,12 +9,23 @@ class: single
     <div class="project__text">
       <h2 class="project__person">
         {{title}}
-        <span class="project__course">{{course}}</span>
       </h2>
       <h3 class="project__title">{{project_title}}</h3>
       {% if prof %}
-      <p class="project__supervisor">Betreuung: {{prof}}</p>
+      {% assign profs = prof | split: ","%}
+      <p class="project__supervisor">Betreuung:
+        {% for p in profs %}
+        <span>{{p | strip}}</span>
+        {% endfor %}
+      </p>
       {% endif %}
+      <p class="project__course">
+        {% if course == "MA" %}
+        MA Kommunikationsdesign
+        {% else %}
+        BA Kommunikationsdesign
+        {% endif %}
+      </p>
       <div class="project__body">
         {{content}}
       </div>
@@ -32,7 +43,14 @@ class: single
   <section class="project__images">
     {% for i in gallery%}
     {% if i.image contains ".mp4" %}
-    <video muted autoplay playsinline loop class="project__image" src="{{i.image | url}}"></video>
+    <div data-has-audio="{{i.hasAudio}}" class="video__container is-muted">
+      <video muted autoplay playsinline loop class="project__image" src="{{i.image | url}}"></video>
+      <button class="video__mute">
+        Mute/Unmute
+        {% include volume-high.svg %}
+        {% include volume-mute.svg %}
+      </button>
+    </div>
     {% else %}
     <img class="project__image" src="{{i.image | url}}" alt="{{i.alt}}" />
     {% endif %}

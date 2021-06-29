@@ -11,8 +11,10 @@ links:
 gallery:
   - alt: alt
     image: /assets/uploads/21-06-24-rain-lux-01.mp4
+    hasAudio: true
   - image: /assets/uploads/21-06-24-rain-lux-02.mp4
     alt: alt
+    hasAudio: true
   - image: /assets/uploads/tolgay-beyaznur-image-01.jpg
     alt: alt
 featured_image:

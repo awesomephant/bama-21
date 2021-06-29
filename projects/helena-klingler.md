@@ -5,7 +5,7 @@ course: BA
 project_title: Unsichtbare Tage
 prof: Prof. Nadja Mayer
 draft: false
-project_tags: Text, Audio, Editorial-Design
+project_tags: Text, Audio, Editorial Design
 gallery:
   - image: /assets/uploads/1.jpg
     alt: Unsichtbare Tage

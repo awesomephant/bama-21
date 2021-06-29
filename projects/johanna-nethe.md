@@ -5,7 +5,7 @@ course: BA
 project_title: Korrelat – zwischen analog und digital
 prof: Prof. Dr. Isabel Naegele-Spamer
 draft: false
-project_tags: Editorial-Design, Freie Gestaltung
+project_tags: Editorial Design, Freie Gestaltung
 links:
   - url: www.instagram.com/johannanethe/
 gallery:

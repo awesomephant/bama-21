@@ -5,7 +5,7 @@ course: BA
 project_title: Wegański – Die vegane Szene Warschaus in Bildern, Geschichten und Rezepten
 prof: Nadja Mayer
 draft: false
-project_tags: Editorial-Design, Buchgestaltung
+project_tags: Editorial Design, Buchgestaltung
 links:
   - url: http://www.instagram.com/jowedesign/
 gallery:

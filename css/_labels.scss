@@ -23,7 +23,11 @@ body.labels {
   }
 }
 .labels__list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  @media print {
+    display: block;
+  }
 }
 .label__wrapper {
   height: $height + $bleed * 2;
@@ -32,6 +36,10 @@ body.labels {
   margin-bottom: 1cm;
   break-inside: avoid;
   page-break-inside: avoid;
+  margin-right: 1cm;
+  @media print {
+    margin-right: 0;
+  }
 }
 .label {
   font-family: $sans;

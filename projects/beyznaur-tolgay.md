@@ -3,6 +3,7 @@ layout: project
 title: Beyzanur Tolgay
 course: MA
 project_title: „Rain“ – ein animiertes Poetry Video
+prof: " Prof. Monika Aichele, Prof. Charlotte Schröner "
 draft: false
 project_tags: Illustration, Animation
 links:

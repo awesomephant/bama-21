@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Beyznaur Tolgay
+title: Beyzanur Tolgay
 course: MA
 project_title: „Rain“ – ein animiertes Poetry Video
 draft: false

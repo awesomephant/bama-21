@@ -116,11 +116,11 @@ body.labels {
 
 .label__course {
   position: absolute;
-  left: 5mm;
-  bottom: 5mm;
+  left: 0;
+  bottom: 0;
   text-transform: lowercase;
-  transform-origin: center;
-  transform: rotate(90deg);
+  transform-origin: bottom left;
+  transform: rotate(90deg) translateX(-100%) translateX(-5mm) translateY(-5mm);
   font-size: 16pt;
 }
 

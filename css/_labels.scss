@@ -1,4 +1,15 @@
 $blue: rgb(56, 109, 255);
+$bleed: 2mm;
+$width: 210mm;
+$height: 74mm;
+
+* {
+  box-sizing: border-box;
+}
+@page {
+  margin-bottom: 25mm;
+}
+
 body.labels {
   background-color: white;
   padding: 2cm;
@@ -12,22 +23,23 @@ body.labels {
   }
 }
 .labels__list {
-  display: flex;
-  flex-wrap: wrap;
-  @media print {
-    display: block;
-  }
+  display: block;
+}
+.label__wrapper {
+  height: $height + $bleed * 2;
+  width: $width + $bleed * 2;
+  padding: $bleed;
+  margin-bottom: 1cm;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 .label {
   font-family: $sans;
   font-weight: 600;
   display: block;
-  margin-bottom: 1cm;
-  margin-right: 1cm;
-  width: 210mm;
-  height: 74mm;
+  width: $width;
+  height: $height;
   position: relative;
-  break-inside: avoid;
   transform-origin: center;
   border: 1px solid black;
   color: white;
@@ -106,12 +118,12 @@ body.labels {
 
 .label__background {
   position: absolute;
-  top: -2mm;
-  left: -2mm;
+  top: -$bleed;
+  left: -$bleed;
   right: 0mm;
   bottom: 0mm;
-  width:  calc(100% + 4mm);
-  height: calc(100% + 4mm);
+  width: calc(100% + #{$bleed * 2});
+  height: calc(100% + #{$bleed * 2});
   z-index: -100;
 }
 
@@ -121,12 +133,17 @@ body.labels {
   font-weight: normal;
   font-size: 14px;
   appearance: none;
-  bottom: -1.75em;
-  padding: .1em .3em;
+  bottom: 1em;
+  left: 5em;
+  padding: 0.1em 0.3em;
   border: 1px solid black;
   color: black;
   cursor: pointer;
   background-color: transparent;
+  display: none;
+  .label:hover & {
+    display: inline-block;
+  }
   &:hover {
     text-decoration: underline;
   }

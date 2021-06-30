@@ -15,29 +15,31 @@
     <h1>BaMa Label Generator (click any text frame to edit)</h1>
     <div class="labels__list">
         {% for p in collections.projects %}
-        <div class="label">
-            {% assign ptags = p.data.project_tags | split: ","%}
-            <span contenteditable class="label__name">{{p.data.title}}</span>
-            <span contenteditable class="label__title">{{p.data.project_title}}</span>
-            <p contenteditable class="label__prof">
-                {% assign profs = p.data.prof | split: ","%}
-                {% for p in profs %}
-                <span>{{p | strip}}</span>
-                {% endfor %}
-            </p>
-            <p contenteditable class="label__tags">
-                {% assign tags = p.data.project_tags | split: ","%}
-                {% for t in tags %}
-                {% if t != "undefined" %}
-                <span>{{t | strip }}</span>
-                {% endif %}
-                {% endfor %}
-            </p>
-            <span contenteditable class="label__course">
-                {{p.data.course}}
-            </span>
-            <canvas class="label__background"></canvas>
-            <button class="label__regen">Re-Roll Background</button>
+        <div class="label__wrapper">
+            <div class="label">
+                {% assign ptags = p.data.project_tags | split: ","%}
+                <span contenteditable class="label__name">{{p.data.title}}</span>
+                <span contenteditable class="label__title">{{p.data.project_title}}</span>
+                <p contenteditable class="label__prof">
+                    {% assign profs = p.data.prof | split: ","%}
+                    {% for p in profs %}
+                    <span>{{p | strip}}</span>
+                    {% endfor %}
+                </p>
+                <p contenteditable class="label__tags">
+                    {% assign tags = p.data.project_tags | split: ","%}
+                    {% for t in tags %}
+                    {% if t != "undefined" %}
+                    <span>{{t | strip }}</span>
+                    {% endif %}
+                    {% endfor %}
+                </p>
+                <span contenteditable class="label__course">
+                    {{p.data.course}}
+                </span>
+                <canvas class="label__background"></canvas>
+                <button class="label__regen">Re-Roll Background</button>
+            </div>
         </div>
         {% endfor %}
     </div>

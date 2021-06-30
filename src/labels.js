@@ -61,5 +61,4 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     generateBackground(label)
   })
-  textBalancer.balanceText('.label__title');
 });

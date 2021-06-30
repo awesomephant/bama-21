@@ -1,7 +1,12 @@
 $blue: rgb(56, 109, 255);
-$bleed: 2mm;
+$bleed: 3mm;
 $width: 210mm;
 $height: 74mm;
+
+$markSize: 6mm;
+$markMargin: 2mm;
+$markWeight: .5pt;
+
 
 * {
   box-sizing: border-box;
@@ -30,8 +35,8 @@ body.labels {
   }
 }
 .label__wrapper {
-  height: $height + $bleed * 2;
-  width: $width + $bleed * 2;
+  height: $height + $bleed * 2 + $markSize * 2;
+  width: $width + $bleed * 2 + $markSize * 2;
   padding: $bleed;
   margin-bottom: 1cm;
   break-inside: avoid;
@@ -48,6 +53,8 @@ body.labels {
   width: $width;
   height: $height;
   position: relative;
+  left: $markSize;
+  top: $markSize;
   transform-origin: center;
   border: 1px solid black;
   color: white;
@@ -157,5 +164,120 @@ body.labels {
   }
   @media print {
     display: none;
+  }
+}
+
+.label__mark {
+  position: absolute;
+  width:  $markSize + $bleed;
+  height: $markSize + $bleed;
+  &:before, &:after {
+    display: block;
+    content: "";
+    position: absolute;
+  }
+}
+
+// top left
+.label__mark--1 {
+  left: -$bleed - $markSize;
+  top: -$bleed - $markSize;
+  &:before {
+    content: "";
+    width: 1px;
+    right: 0;
+    bottom: $markMargin;
+    height: $markSize;
+    background-color: black;
+    @media print {
+      width: $markWeight;
+    }
+  }
+  &:after {
+    height: 1px;
+    right: $markMargin;
+    bottom: 0;
+    width: $markSize;
+    background-color: black;
+    @media print {
+      height: $markWeight;
+    }
+  }
+}
+
+// top right
+.label__mark--2 {
+  right: -$bleed - $markSize;
+  top: -$bleed - $markSize;
+  &:before {
+    content: "";
+    width: 1px;
+    left: 0;
+    bottom: $markMargin;
+    height: $markSize;
+    background-color: black;
+    @media print {
+      width: $markWeight;
+    }
+  }
+  &:after {
+    height: 1px;
+    left: $markMargin;
+    bottom: 0;
+    width: $markSize;
+    background-color: black;
+    @media print {
+      height: $markWeight;
+    }
+  }
+}
+.label__mark--3 {
+  right: -$bleed - $markSize;
+  bottom: -$bleed - $markSize;
+  &:before {
+    content: "";
+    width: 1px;
+    left: 0;
+    top: $markMargin;
+    height: $markSize;
+    background-color: black;
+    @media print {
+      width: $markWeight;
+    }
+  }
+  &:after {
+    height: 1px;
+    left: $markMargin;
+    top: 0;
+    width: $markSize;
+    background-color: black;
+    @media print {
+      height: $markWeight;
+    }
+  }
+}
+.label__mark--4 {
+  left: -$bleed - $markSize;
+  bottom: -$bleed - $markSize;
+  &:before {
+    content: "";
+    width: 1px;
+    right: 0;
+    top: $markMargin;
+    height: $markSize;
+    background-color: black;
+    @media print {
+      width: $markWeight;
+    }
+  }
+  &:after {
+    height: 1px;
+    right: $markMargin;
+    top: 0;
+    width: $markSize;
+    background-color: black;
+    @media print {
+      height: $markWeight;
+    }
   }
 }

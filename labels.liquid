@@ -17,6 +17,10 @@
         {% for p in collections.projects %}
         <div class="label__wrapper">
             <div class="label">
+                <div class="label__mark label__mark--1"></div>
+                <div class="label__mark label__mark--2"></div>
+                <div class="label__mark label__mark--3"></div>
+                <div class="label__mark label__mark--4"></div>
                 {% assign ptags = p.data.project_tags | split: ","%}
                 <span contenteditable class="label__name">{{p.data.title}}</span>
                 <span contenteditable class="label__title">{{p.data.project_title}}</span>

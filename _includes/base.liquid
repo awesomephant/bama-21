@@ -58,39 +58,7 @@
 
   <script src="{{"/main.js" | url}}"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <style>
-    @font-face {
-      font-family: "modelica";
-      src: url({{"/assets/fonts/BwModelicaSS02-Medium.woff" | url}}) format("woff");
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "modelica";
-      src: url({{"/assets/fonts/BwModelicaSS02-Medium.woff2" | url}}) format("woff2");
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "modelica";
-      src: url({{"/assets/fonts/BwModelicaSS02-Bold.woff" | url}}) format("woff");
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "modelica";
-      src: url({{"/assets/fonts/BwModelicaSS02-Bold.woff2" | url}}) format("woff2");
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-    }
-  </style>
+  {% include fonts.liquid %}
 </head>
 
 <body class='{{ class }}' data-showing-work="{{settings.show_work}}">

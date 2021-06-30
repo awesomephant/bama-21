@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaMa Label Generator</title>
+    <link rel="stylesheet" href="{{"/main.css" | url }}">
+    {% include fonts.liquid %}
+</head>
+
+<body class="labels">
+    <h1>BaMa Label Generator</h1>
+    <div class="labels__list">
+        {% for p in collections.projects %}
+        <div class="label">
+            {% assign ptags = p.data.project_tags | split: ","%}
+            <span contenteditable class="label__name">{{p.data.title}}</span>
+            <span contenteditable class="label__title">{{p.data.project_title}}</span>
+            <span contenteditable class="label__prof">{{p.data.prof}}</span>
+            <p contenteditable class="label__tags">
+                {% assign tags = p.data.project_tags | split: ","%}
+                {% for t in tags %}
+                <span>{{t | strip }}</span>
+                {% endfor %}
+            </p>
+            <span contenteditable class="label__course">
+                {{p.data.course}}
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body.labels {
+  background-color: white;
+  padding: 2cm;
+
+  h1 {
+    margin-bottom: 2em;
+    @media print {
+      display: none;
+    }
+  }
+
+}
+.label {
+  font-family: $sans;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1cm;
+  border: 1pt solid black;
+  width: 210mm;
+  height: 74mm;
+  padding: 1cm;
+  position: relative;
+  break-inside: avoid;
+  span {
+    border: 1px solid red;
+  }
+}
+
+.label__name {
+  position: absolute;
+  font-size: 30pt;
+  top: 5mm;
+  right: 5mm;
+  text-align: right;
+}
+.label__title {
+  position: absolute;
+  font-size: 16pt;
+  top: 20mm;
+  right: 5mm;
+  text-align: right;
+  left: 50mm;
+  line-height: 1.3;
+}
+.label__prof {
+  position: absolute;
+  transform-origin: center;
+  transform: rotate(180deg);
+  bottom: 5mm;
+  right: 5mm;
+  left: 40mm;
+  font-size: 16pt;
+}
+.label__tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  text-transform: lowercase;
+  line-height: 1.2;
+  letter-spacing: .02em;
+  transform: rotate(90deg) translateY(-100%) translateX(5mm) translateY(-5mm);
+  border: 1px green;
+  span {
+    display: block;
+  }
+}
+
+.label__course {
+  position: absolute;
+  left: 5mm;
+  bottom: 5mm;
+  text-transform: lowercase;
+  transform-origin: center;
+  transform: rotate(90deg);
+}

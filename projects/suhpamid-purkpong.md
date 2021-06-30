@@ -8,6 +8,13 @@ draft: false
 project_tags: Buchgestaltung, Illustration
 links:
   - url: https://www.instagram.com/ultimacolor/
+gallery:
+  - image: /assets/uploads/_mg_1_1920-px.jpg
+  - image: /assets/uploads/_mg_2_1920-px.jpg
+  - image: /assets/uploads/_mg_3_1920-px.jpg
+  - image: /assets/uploads/_mg_4_1920-px.jpg
+  - image: /assets/uploads/_mg_5_1920-px.jpg
+  - image: /assets/uploads/_mg_6_1920-px.jpg
 featured_image:
   image: /assets/uploads/_mg_1_1920-px.jpg
 ---

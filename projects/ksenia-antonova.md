@@ -3,7 +3,7 @@ layout: project
 title: Ksenia Antonova
 course: BA
 project_title: SimpleFly - Eine App zur Vereinfachung des Reiseprozesses
-prof: Prof. Reckter
+prof: Prof. Holger Reckter
 draft: false
 project_tags: Webdesign, UX Design
 links:

@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main
 media_folder: "/assets/uploads"
+site_url: https://friendly-cori-95d1bf.netlify.app
 show_preview_links: true
 collections:
   - name: "settings"
@@ -60,6 +61,10 @@ collections:
     preview_path: "/projects/{{slug}}/"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}}"
+    view_groups:
+      - label: Course
+        field: course
     fields:
       - label: "Layout"
         name: "layout"

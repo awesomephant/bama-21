@@ -1,4 +1,3 @@
-import textBalancer from 'text-balancer';
 import { gra } from './util';
 
 const grey = [224, 222, 220];

@@ -10,27 +10,28 @@ links:
   - url: www.instagram.com/j_ruhmann/
 gallery:
   - image: /assets/uploads/buchinhalt1.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: "Weißes Buchcover auf schwarzem Grund. Titel in dünnen Buchstaben: The Diary's Exit / Julia Ruhmann"
   - image: /assets/uploads/buchinhalt2-.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Links ein Stadtplan von Dublin, rechts Fließtext
   - image: /assets/uploads/buchinhalt3.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Lnks Fließtext, rechts Zeichnung mit einer gelben Blume und Handschrift
   - image: /assets/uploads/buchinhalt4.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Links die Überschrift 'Die Zigarette Danach' und zwei Absätze in Handschrift, rehcts Fließtext
   - image: /assets/uploads/buchinhalt5.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Links die Überschrift 'Möge das Abenteuer Beginnen', ein Absatz in Handschrift und Fließtext, rechts Polaroid-Foto eines Fahrrads.
   - image: /assets/uploads/buchinhalt6.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Links Fließtext, rechts Foto einer grau-grünen Vogelfeder
   - image: /assets/uploads/buchinhalt7.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Links zwei Polaroids eines Berges, rechts ein großes Foto eines Wasserfalls 
   - image: /assets/uploads/buchinhalt10.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
+    alt: Aufgeschlagenes Buch. Links eine Zeichnung einer fallenden Figur, rechts Fließtext
   - image: /assets/uploads/buchinhalt11.jpg
-    alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
-  - alt: The Diary's Exit; Drogen, Sucht und erfolgreicher Entzug
-    image: /assets/uploads/buchinhalt15.jpg
+    alt: Aufgeschlagenes Buch. Links Fließtext, rechts zwei Zeilen in weiß auf schwarzem Grund
+  - image: /assets/uploads/buchinhalt15.jpg
+    alt: Aufgeschlagenes Buch. Doppelseitiger Linolschnitt in Grün, Beige, Braun und Schwarz zeigt zwei Figuren in einem Wald
 featured_image:
   image: /assets/uploads/buchinhalt1.jpg
+  alt: "Weißes Buchcover auf schwarzem Grund. Titel in dünnen Buchstaben: The Diary's Exit / Julia Ruhmann"
 ---
 Überfordert unsere moderne Leistungsgesellschaft viele Menschen? Greifen sie deshalb immer häufiger zu psychoaktiven Substanzen? Das Buch erzählt die wahre Geschichte einer süchtigen jungen Frau, die den Kampf gegen die Sucht angetreten hat.
 

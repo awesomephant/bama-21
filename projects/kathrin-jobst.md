@@ -11,21 +11,14 @@ links:
   - url: instagram.com/kathrinundfred/
 gallery:
   - image: /assets/uploads/kathrin-und-fred_1.jpg
-    alt: "Kathrin und Fred. Oder: Bin ich vielleicht aus Versehen jemand anders
-      geworden?"
-  - image: /assets/uploads/kathrin-und-fred_2.jpg
-    alt: "Kathrin und Fred. Oder: Bin ich vielleicht aus Versehen jemand anders
-      geworden?"
+    alt: Drei weiße Bücher sind auf hellblauem Grund gestapelt
   - image: /assets/uploads/kathrin-und-fred_3.jpg
-    alt: "Kathrin und Fred. Oder: Bin ich vielleicht aus Versehen jemand anders
-      geworden?"
+    alt: Aufgeschlagenes Buch. Links drei kleine Fotos, rechts Fließtext.
   - image: /assets/uploads/kathrin-und-fred_4.jpg
-    alt: "Kathrin und Fred. Oder: Bin ich vielleicht aus Versehen jemand anders
-      geworden?"
+    alt: Aufgeschlagenes Buch. Links Fließtext, rechts zwei Zeilen in weiß auf gelben Grund
 featured_image:
   image: /assets/uploads/kathrin-und-fred_1.jpg
-  alt: "Kathrin und Fred. Oder: Bin ich vielleicht aus Versehen jemand anders
-    geworden?"
+  alt: Drei weiße Bücher sind auf hellblauem Grund gestapelt
 ---
 Wie fühlt sich das eigene Erwachsen an? Ist es ein Prozess? Ist es ein Zustand? Ist es eine Zahl? Wer ist erwachsen? Wer ist es nicht? Lohnt sich das überhaupt? Wer bin ich? Wer war ich? Wer sind die anderen? 
 

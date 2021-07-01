@@ -38,7 +38,7 @@ body.labels {
   height: $height + $bleed * 2 + $markSize * 2;
   width: $width + $bleed * 2 + $markSize * 2;
   padding: $bleed;
-  margin-bottom: 1cm;
+  margin-bottom: .5cm;
   break-inside: avoid;
   page-break-inside: avoid;
   margin-right: 1cm;

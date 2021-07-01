@@ -13,28 +13,13 @@
   padding: 0.5em var(--padding);
   pointer-events: none;
   opacity: 0;
-  transition: opacity $fast;
+  transition: $fast;
   visibility: hidden;
-  li{
-    opacity: 0;
-    transition: $fast;
-    transform: translateY(20px);
-    @for $i from 1 through 50 {
-      &:nth-of-type(#{$i}){
-        transition-delay: 10ms * $i;
-      }
-    }
-  }
+  backdrop-filter: blur(3px);
   &.active {
     visibility: visible;
     pointer-events: all;
-    backdrop-filter: blur(3px);
     opacity: 1;
-    li{
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0;
-    }
   }
   .nav-stuck & {
     position: fixed;
@@ -43,6 +28,11 @@
 }
 
 .filters__tags {
+  transition: $fast;
+  transform: translateY(20px);
+  .filters.active & {
+    transform: translateY(0px);
+  }
   li {
     display: inline-block;
     &:last-of-type button:after {

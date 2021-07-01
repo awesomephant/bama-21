@@ -8,16 +8,16 @@ draft: false
 project_tags: Text, Audio, Editorial Design
 gallery:
   - image: /assets/uploads/1.jpg
-    alt: Unsichtbare Tage
+    alt: Geschlossenes Buch auf hellgrauem Grund. Das Cover ist ein Foto einer jungen Frau, die mit einem Tampon Lippenstift aufträgt.
   - image: /assets/uploads/2.jpg
-    alt: Unsichtbare Tage
+    alt: Aufgeschlagenes Buch auf hellgrauem Grund. Ein rotes Liniendiagramm füllt beide Seiten.
   - image: /assets/uploads/3.jpg
-    alt: Unsichtbare Tage
+    alt: "Aufgeschlagenes Buch auf hellgrauem Grund. Auf der Linken Seite ist ein Schwarzweißfoto kreisförmig ausgeschnitten, rechts die Kapitelüberschrift: Tag 1"
   - image: /assets/uploads/4.jpg
-    alt: Unsichtbare Tage
+    alt: Aufgeschlagenes Buch auf hellgrauem Grund. Das Wort 'Befreiung' ist in verschieden Schriftgrößen und Positionen wiederholt
 featured_image:
   image: /assets/uploads/1.jpg
-  alt: Unsichtbare Tage
+  alt: Geschlossenes Buch auf hellgrauem Grund. Das Cover ist ein Foto einer jungen Frau, die mit einem Tampon Lippenstift aufträgt.
 ---
 Die fortschreitende Technisierung hat die Menschheit zweifelsfrei weit vorangebracht und vieles verändert. Aber eines ist im menschlichen Leben gleichgeblieben: unsere Hardware – unser Körper. Und damit auch der hormonelle Kreislauf der Fruchtbarkeit, der den Fortbestand unserer Spezies erst ermöglicht: der weibliche Zyklus. Doch trotz seiner Relevanz, scheint der natürliche weibliche Zyklus und seine Auswirkungen auf Leben und Körper von Frauen kein besonders publikes Thema zu sein. Ist das ein Produkt der Entfremdung von natürlicher Körperlichkeit und konkreter von natürlicher Weiblichkeit? Und wenn dem so ist, wie können wir dieser Entfremdung entgegenwirken? Diese Fragen werden im Verlauf der Arbeit kritisch untersucht, indem sich mit den biologischen Abläufen des weiblichen Zyklus, der Auswirkung hormoneller Verhütungsmethoden auf Frauen und der Geschlechterdarstellung in den Medien befasst wird. 
 

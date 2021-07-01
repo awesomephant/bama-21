@@ -10,20 +10,20 @@ links:
   - url: www.instagram.com/johannanethe/
 gallery:
   - image: /assets/uploads/manifest.jpg
-    alt: Korrelat – zwischen analog und digital
+    alt: "Aufgeschlagenes Magazin. Links eine abstrakte Zeichnung und Überschrift in Großbuchstaben: Ausbruch aus der digitalen Eintönigkeit. Rechts Fließtext in vielen kurzen Absätzen" 
   - image: /assets/uploads/nethe01.jpg
-    alt: Korrelat – zwischen analog und digital
+    alt: Aufgeschlagenes Magazin. Zwei Zeichnungen abstrakter, organischer Formen. Links in hellrot, rechts in rot und blau.  
   - image: /assets/uploads/nethe02.jpg
-    alt: Korrelat – zwischen analog und digital
+    alt: "Aufgeschlagenes Magazin. Zwei abstrakte Illustrationen: Rechts verwischte, unscharfe Formen in lila und weiß, rechts silber-metallische Flecken auf lila-weiß kariertem Grund" 
   - image: /assets/uploads/nethe03.jpg
-    alt: Korrelat – zwischen analog und digital
+    alt: "Aufgeschlagenes Magazin. Zwei Illustrationen: Links organische Formen in weiß, gelb und schwarz, Rechts Diagramme komplexer, dreidimensionaler Formen und organgene Flecken."
   - image: /assets/uploads/nethe04.jpg
-    alt: Korrelat – zwischen analog und digital
+    alt: "Aufgeschlagenes Magazin. Zwei Fotos: Links eine flache Textilarbeit in lila, rosa udn orange, rechts eine organische, dreidimensionale form aus weißem und orangenem Gewebe."
   - image: /assets/uploads/gestaltungsgrundlage.jpg
-    alt: Korrelat – zwischen analog und digital
+    alt: "Aufgeschlagenes Magazin. Links Fließtext, rechts die Überschrift: Gestaltungs-System" 
 featured_image:
   image: /assets/uploads/manifest.jpg
-  alt: Korrelat – zwischen analog und digital
+  alt: "Aufgeschlagenes Magazin. Links eine abstrakte Zeichnung und Überschrift in Großbuchstaben: Ausbruch aus der digitalen Eintönigkeit. Rechts Fließtext in vielen kurzen Absätzen"
 ---
 Der Arbeitsalltag moderner Designer*innen ist digital. Doch die gestalterische Routine und die narkotisierende Perfektion der uninspirierten Handhabung von Computerprogrammen führt zu weniger Kreativität und gleichförmigen Projekten. 
 

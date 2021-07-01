@@ -8,24 +8,24 @@ draft: false
 project_tags: Webdesign, UX Design
 gallery:
   - image: /assets/uploads/jan_mandler_bild_1.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Rendering eines roten Smartphones auf rotem Grund. Bildschirm weiß mit roter Schrift
   - image: /assets/uploads/jan_mandler_bild_2.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Rendering von zwei roten Smartphones auf rotem Grund. Auf den Bildschirmen Diagramme eines flachen Bauteils
   - image: /assets/uploads/jan_mandler_bild_3.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Rendering von drei roten Smartphones auf rotem Grund. Auf den Bildschirmen Diagramme eines flachen Bauteils
   - image: /assets/uploads/jan_mandler_bild_4.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Rendering von zwei roten Smartphones auf rotem Grund. Auf den Bildschirmen Diagramme einer kleinen, mechanischen Druckpresse.
   - image: /assets/uploads/jan_mandler_bild_5.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Kleine, mechanische Druckpresse neben einem Smartphone. Auf dem Bildschirm ein Rendering der selben Presse auf rotem Grund
   - image: /assets/uploads/jan_mandler_bild_6.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Konstruktionszeichnung eines abgerundeten Bauteils. Verschiedene Radii sind mit R1 und R2 bezeichnet.
   - image: /assets/uploads/jan_mandler_bild_7.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Viele flache, rote Bauteile sind ausgebreitet und von oben betrachtet
   - image: /assets/uploads/jan_mandler_bild_8.jpg
-    alt: Außer Reichweite von Kindern aufbewahren
+    alt: Mechanische Druckpresse auf rotem Grund.
 featured_image:
   image: /assets/uploads/jan_mandler_bild_1.jpg
-  alt: Außer Reichweite von Kindern aufbewahren
+  alt: Rendering eines roten Smartphones auf rotem Grund. Bildschirm weiß mit roter Schrift
 ---
 Die Bedienungsanleitung löst beim Nutzer meist durch zahlreiche negative Erlebnisse verursachtes Unbehagen aus und stachelt häufig dazu an gegen das Lesen der vermeintlich unbrauchbaren Texte zu rebellieren und das Produkt auf eigene Faust zu erkunden. Dieses Vorgehen kann zwar zu großen Erfolgen und zur Stärkung des eigenen Selbstbewusstseins führen, dennoch endet es oft in noch größerem Frust und in der Erkenntnis, dass das Lesen der Bedienungsanleitung den Nutzen eines Produkts doch deutlich erhöhen kann.
 

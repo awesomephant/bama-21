@@ -10,12 +10,12 @@ links:
   - url: www.instagram.com/isabellalng/
 gallery:
   - image: /assets/uploads/isabella_lang_1.jpg
-    alt: Noba – Ein Guide zu barrierefreiem App-Design
+    alt: "Screenshot einer Webseite. Eine Illustration mit roten, weißen und rosafarbenen Symbolen auf tiefblauem Grund füllt die Linke Hälfte des Fensters. Rechts in großer Schrift auf weißem Grund: Noba / A guide to accissble app design"  
   - image: /assets/uploads/isabella_lang_2.jpg
-    alt: Noba – Ein Guide zu barrierefreiem App-Design
+    alt: Drei Screenshots von Instagram-Posts zum Thema Barrierefreiheit
 featured_image:
   image: /assets/uploads/isabella_lang_2.jpg
-  alt: Noba – Ein Guide zu barrierefreiem App-Design
+  alt: Drei Screenshots von Instagram-Posts zum Thema Barrierefreiheit
 ---
 April 2021: Die Lizenz der Corona-App „luca“ wurde bereits von 13 Bundesländern gekauft, um sie flächendeckend gegen die Ausbreitung des Corona-Virus einsetzen zu können. Das Problem: Menschen mit Beeinträchtigung des Sehens, die auf Assistenzsoftware angewiesen sind, konnten die App nicht nutzen. Eine große Zahl an Menschen wurde somit durch die fehlende Barrierefreiheit ausgeschlossen, von einer App, die unbedingt für alle zugänglich sein sollte. Dieses Beispiel stellt leider keinen Einzelfall dar. 
 

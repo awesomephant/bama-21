@@ -10,16 +10,16 @@ links:
   - url: http://www.instagram.com/jowedesign/
 gallery:
   - image: /assets/uploads/weichhart_johanna_01.jpg
-    alt: Magazinseite von Johanna Weichhart
+    alt: "Person öffnet ein Magazin. Doppelseitiges Foto zeigt ein rosa Neon-Schild: Vegan Ramen Shop"
   - image: /assets/uploads/weichhart_johanna_02.jpg
-    alt: Magazinseite von Johanna Weichhart
+    alt: Person öffnet ein Magazin. Links die Überschrift 'Tomatige Shoyu Ramen' und ein Rezept-Text, rechts ein Foto einer Ramen-Schüssel.
   - image: /assets/uploads/weichhart_johanna_03.jpg
-    alt: Magazinseite von Johanna Weichhart
+    alt: Person öffnet ein Magazin. Links die Überschrift 'Pierogi' und ein Rezept-Text, rechts ein Foto von einer blauen Schüssel mit Teigtaschen.
   - image: /assets/uploads/weichhart_johanna_04.jpg
-    alt: Magazinseite von Johanna Weichhart
+    alt: Person öffnet ein Magazin.
 featured_image:
   image: /assets/uploads/weichhart_johanna_01.jpg
-  alt: Magazinseite von Johanna Weichhart
+  alt: "Person öffnet ein Magazin. Links Fließtext, rechts ein Foto einer Küche"
 ---
 Wann immer wir reisen, geben Essgewohnheiten Einblicke in Kulturen, den Lebensstil einer Gesellschaft, eines Landes oder einer Stadt. Sie zeugen von Traditionen und Bräuchen, von Innovation und Wandel, von Lebensumständen und manchmal sogar von politischen Begebenheiten. 
 

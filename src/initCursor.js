@@ -40,7 +40,7 @@ function update() {
     target.x += target.vx;
     target.y += target.vy;
 
-    const margin = .4;
+    const margin = .2;
     const high = 1 - margin;
     const low = margin;
 

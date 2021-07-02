@@ -10,26 +10,20 @@ links:
   - url: www.instagram.com/lea__petry/
 gallery:
   - image: /assets/uploads/petry_lea_website1.jpg
-    alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des
-      Körpers
+    alt: "Buchcover: Ich lebe als Objekt"
   - image: /assets/uploads/petry_lea_website2.jpg
-    alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des
-      Körpers
+    alt: "Aufgeschlagenes Buch. Überschrift: Ich lebe als Objekt"
   - image: /assets/uploads/petry_lea_website3.jpg
-    alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des
-      Körpers
+    alt: "Aufgeschlagenes Buch. Überschrift: Ich sehe hin, zum ersten Mal"
   - image: /assets/uploads/petry_lea_website4.jpg
-    alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des
-      Körpers
+    alt: Aufgeschlagenes Buch. Links und rechts Schwarzweißfotos eines jungen Menschen.
   - image: /assets/uploads/petry_lea_website5.jpg
-    alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des
-      Körpers
+    alt: Aufgeschlagenes Buch. Links und rechts große Schwarzweißfotos eines nackten jungen Menschen vor dunklem Hintergrund
   - image: /assets/uploads/petry_lea_website6.jpg
-    alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des
-      Körpers
+    alt: Aufgeschlagenes Buch. Links und rechts Schwaryweißfotos eines nackten Menscen vor einem Fenster
 featured_image:
   image: /assets/uploads/petry_lea_website1.jpg
-  alt: Ich lebe als Objekt – Eine Auseinandersetzung mit der Wahrnehmung des Körpers
+  alt: "Buchcover: Ich lebe als Objekt"
 ---
 Die Beziehung zum eigenen Körper ist für die Meisten eine wichtige und manchmal schmerzvolle Thematik. Wir vergleichen uns, haben Erwartungen an uns und unser Äußeres, die wir oftmals nicht erfüllen können. So ist die Wahrnehmung, die Beziehung, die wir zu unserem Körper haben, für viele Personen mit Scham und sogar Abneigung verbunden. 
 

@@ -9,10 +9,10 @@ draft: false
 project_tags: Plakatgestaltung, Webdesign
 gallery:
   - image: /assets/uploads/bild.jpg
-    alt: "Plakat. Eine handvoll Euro-Münzen ist in einem gelben Kondom gesammelt. Daneben in weißer Schrift auf rotem Grund: Schütze dich vor monetärer Inflationskrankheit. Darunter: Anteile-Statt-Nachteile.de / Deutsche Börse Group" 
+    alt: "Diagramm. X-Achse beschriftet mit 'Zeit', Y-Achse mit 'Investoren'. Ein Graph steigt nach rechts hin steil an. Er ist links mit vertrocknetem, rechts mit grünem Gras ausgefüllt. Überschrift in orange: Neue Umweltminister*innen. Darunter: Anteile-statt-Nachteile.de" 
 featured_image:
   image: /assets/uploads/bild.jpg
-  alt: "Plakat. Eine handvoll Euro-Münzen ist in einem gelben Kondom gesammelt. Daneben in weißer Schrift auf rotem Grund: Schütze dich vor monetärer Inflationskrankheit. Darunter: Anteile-Statt-Nachteile.de / Deutsche Börse Group"
+  alt: "Diagramm. X-Achse beschriftet mit 'Zeit', Y-Achse mit 'Investoren'. Ein Graph steigt nach rechts hin steil an. Er ist links mit vertrocknetem, rechts mit grünem Gras ausgefüllt. Überschrift in orange: Neue Umweltminister*innen. Darunter: Anteile-statt-Nachteile.de"
 ---
 In meiner Thesis beschäftige ich mich mit der Analyse, Konzeption und Gestaltung einer  öffentlichkeitswirksamen Werbekampagne, die einen Beitrag zur Imagesteigerung der Börse in der breiten Gesellschaft liefern soll. Entstanden sind vier Werbeplakate, die dem Betrachter einen Einblick in das Thema Börse und Finanzen gewähren und dabei auf die Vorteile des Investierens aufmerksam machen sollen.
 

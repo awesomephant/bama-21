@@ -1,17 +1,10 @@
-import { gra } from './util';
+import { gra, rgb, rgba } from './util';
 
 const grey = [224, 222, 220];
 const orange = [250, 183, 71];
 const mint = [159, 247, 190];
 const res = 2;
 const gradientCount = 3;
-
-function rgb(rgb) {
-  return `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`
-}
-function rgba(rgb, a) {
-  return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${a})`
-}
 
 function generateBackground(label) {
   // Let's set up the canvas element

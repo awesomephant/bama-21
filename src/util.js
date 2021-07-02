@@ -13,6 +13,9 @@ function mark(c, x, y, r) {
   c.lineWidth = "1";
   c.strokeRect(x - r / 2, y - r / 2, r, r)
 }
+function d(x1, y1, x2, y2) {
+	return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+}
 
 function average(arr) {
   let sum = 0;
@@ -22,4 +25,12 @@ function average(arr) {
   return sum / arr.length;
 }
 
-export { mark, average, gri, gra }
+function rgb(rgb) {
+  return `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`
+}
+
+function rgba(rgb, a) {
+  return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${a})`
+}
+
+export { mark, average, gri, gra, d,rgb,rgba }

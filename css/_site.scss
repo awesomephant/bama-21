@@ -137,13 +137,9 @@
 .hero {
   position: relative;
   font-size: var(--ms-0);
-  height: 100vh;
-  // height: calc(100vh - 3em);
+  height: calc(100vh - 3em);
   @include bp(m) {
-    // height: calc(100vh - 3.5em);
-  }
-  @include bp(l) {
-    // height: calc(100vh - 4.3em);
+    height: calc(100vh - 3.5em);
   }
   overflow: hidden;
 }

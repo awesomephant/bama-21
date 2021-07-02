@@ -114,6 +114,12 @@
   li {
     list-style: inside;
   }
+  em {
+    font-style: italic;
+  }
+  strong {
+    font-weight: bold;
+  }
   a {
     transition: $fast;
     text-decoration: none;

@@ -51,7 +51,7 @@ class: home
   <div class="projects__list">
     {% for p in collections.projects %}
     {% assign ptags = p.data.project_tags | split: ","%}
-    <a href="{{p.url | url }}" class="project__item" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
+    <a href="{{p.url | url }}" class="project__item {% unless p.data.featured_image.image %}no-image{% endunless %}" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
       <div class="projects__image">
         {% if p.data.featured_image.image %}
         <img src="{{p.data.featured_image.image | url }}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />

@@ -40,6 +40,9 @@
   display: inline-block;
   transition: $fast;
   border: 1px solid white;
+  .no-image & {
+    width: 12em;
+  }
   img {
     height: 100%;
     width: auto;

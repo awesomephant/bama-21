@@ -52,8 +52,8 @@ class: single
       </button>
     </div>
     {% else %}
-    {% assign url = i.image | prepend: '.' %}
-    {% image url, i.alt, "(min-width: 45rem) 50vw, 100vw", "project__image" %}
+    {% assign url = i.image %}
+    {% image url, i.alt, "(min-width: 45rem) 50vw, 100vw", "project__image", "nf_resize=fit&w=1500" %}
     {% endif %}
     {% endfor %}
   </section>

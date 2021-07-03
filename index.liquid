@@ -54,8 +54,8 @@ class: home
     <a href="{{p.url | url }}" class="project__item {% unless p.data.featured_image.image %}no-image{% endunless %}" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
       <div class="projects__image">
         {% if p.data.featured_image.image %}
-        {% assign url = p.data.featured_image.image | prepend: '.' %}
-        {% image url, p.data.featured_image.alt, "20vw" %}
+        {% assign url = p.data.featured_image.image %}
+        {% image url, p.data.featured_image.alt, "20vw", "", "nf_resize=fit&h=400" %}
         {% endif %}
       </div>
       <h4 class="project__title">{{p.data.title}}</h4>

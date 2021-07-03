@@ -4,11 +4,13 @@ const md = new markdownIt();
 const Image = require("@11ty/eleventy-img");
 
 if (process.env.NODE_ENV === "staging") {
-  console.log("Building site for staging, disabling pathPrefix.")
+  console.log("Building site for staging")
+  console.log(`— Setting pathPrefix to ""`)
+  console.log("— Disabling image processing")
   prefix = ""
 }
 async function imageShortcode(src, alt, sizes, className) {
-  console.log(`Processing ${src}`)
+  console.log(`Processing ${"." + src}`)
   let metadata = await Image(src, {
     widths: [400, 800, 1600, null],
     formats: ["webp", "jpeg"],
@@ -50,7 +52,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./css/");
   eleventyConfig.addWatchTarget("./src/");
   eleventyConfig.addPassthroughCopy({ "./admin/config.yml": "/admin/config.yml" });
-  eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  if (process.env.NODE_ENV === "staging"){
+    // We're using Netlify Large Media, which means we can't do our own image processing at build time.
+    // Therefore we disable it in that environment, and pass along parameters for Netlify's image transform instead.
+    eleventyConfig.addLiquidShortcode("image", function(src, alt, sizes, className, parameters){
+      return `<img alt="${alt}" src="${src}?${parameters}">`
+    });
+  } else {
+    eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  }
+  
   eleventyConfig.addFilter("renderMarkdown", function (value) {
     return md.render(value);
   });

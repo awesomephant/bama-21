@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === "staging") {
 }
 async function imageShortcode(src, alt, sizes, className) {
   console.log(`Processing ${src}`)
-  let metadata = await Image("." + src, {
+  let metadata = await Image(src, {
     widths: [400, 800, 1600, null],
     formats: ["webp", "jpeg"],
     outputDir: "./_site/assets/images",

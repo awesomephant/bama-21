@@ -22,7 +22,7 @@ class: home
 {% endfor %}
 
 <section class="hero">
-  <h1 class="site__title"><span>lüften</span></h1>
+  <h3 class="site__title"><span>lüften</span></h3>
   <canvas class='lines' id="lines"></canvas>
 </section>
 {% include nav.liquid %}
@@ -54,10 +54,11 @@ class: home
     <a href="{{p.url | url }}" class="project__item {% unless p.data.featured_image.image %}no-image{% endunless %}" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
       <div class="projects__image">
         {% if p.data.featured_image.image %}
-        <img src="{{p.data.featured_image.image | url }}?nf_resize=fit&h=400" alt="{{p.data.featured_image.alt}}" />
+        {% assign url = p.data.featured_image.image | prepend: '.' %}
+        {% image url, p.data.featured_image.alt, "20vw" %}
         {% endif %}
       </div>
-      <h3 class="project__title">{{p.data.title}}</h3>
+      <h4 class="project__title">{{p.data.title}}</h4>
     </a>
     {% endfor %}
   </div>

@@ -52,7 +52,8 @@ class: single
       </button>
     </div>
     {% else %}
-    <img class="project__image" src="{{i.image | url}}" alt="{{i.alt}}" />
+    {% assign url = i.image | prepend: '.' %}
+    {% image url, i.alt, "(min-width: 45rem) 50vw, 100vw", "project__image" %}
     {% endif %}
     {% endfor %}
   </section>

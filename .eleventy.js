@@ -3,15 +3,17 @@ const md = new markdownIt();
 
 const Image = require("@11ty/eleventy-img");
 
-let prefix = "/sose21/"
-
+if (process.env.NODE_ENV === "staging") {
+  console.log("Building site for staging, disabling pathPrefix.")
+  prefix = ""
+}
 async function imageShortcode(src, alt, sizes, className) {
   console.log(`Processing ${src}`)
-  let metadata = await Image(src, {
+  let metadata = await Image("." + src, {
     widths: [400, 800, 1600, null],
     formats: ["webp", "jpeg"],
     outputDir: "./_site/assets/images",
-    urlPath: `${prefix}/assets/images/`
+    urlPath: "/sose21/assets/images/"
   });
   
   let imageAttributes = {
@@ -37,7 +39,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("cleanURL", function (url) {
     return url.replace(/(https?:\/\/)|(www.)|(\/$)/g, "");
   });
-
+  eleventyConfig.addFilter("cleanURL", function (url) {
+    return url.replace(/(https?:\/\/)|(www.)|(\/$)/g, "");
+  });
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("favicon-16x16.png");
@@ -46,10 +50,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./css/");
   eleventyConfig.addWatchTarget("./src/");
   eleventyConfig.addPassthroughCopy({ "./admin/config.yml": "/admin/config.yml" });
+  eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addFilter("renderMarkdown", function (value) {
     return md.render(value);
   });
-  eleventyConfig.addLiquidShortcode("image", imageShortcode);
   return {
     pathPrefix: prefix
   };

@@ -85,7 +85,10 @@ function update() {
 
 function loop() {
     update();
-    window.requestAnimationFrame(loop)
+    // We break here so we draw the lines at least once
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+        window.requestAnimationFrame(loop)
+    }
 }
 
 function initTweenLines() {
@@ -104,7 +107,7 @@ function initTweenLines() {
     }
 }
 
-function setLineCanvas(){
+function setLineCanvas() {
     c = document.querySelector("#lines").getContext("2d")
     c.canvas.width = window.innerWidth;
     c.canvas.height = window.innerHeight;
@@ -130,6 +133,7 @@ function initLines() {
     }
     initTweenLines()
     loop()
+
 }
 
 window.addEventListener("resize", setLineCanvas)

@@ -45,11 +45,18 @@ class: single
     {% if i.image contains ".mp4" %}
     <div data-has-audio="{{i.hasAudio}}" class="video__container is-muted">
       <video muted autoplay playsinline loop class="project__image" src="{{i.image | url}}"></video>
-      <button class="video__mute">
-        Mute/Unmute
-        {% include volume-high.svg %}
-        {% include volume-mute.svg %}
-      </button>
+      <div class="video__controls">
+        <button class="video__play">
+          Pause/Play
+          {% include pause.svg %}
+          {% include play.svg %}
+        </button>
+        <button class="video__mute">
+          Mute/Unmute
+          {% include volume-high.svg %}
+          {% include volume-mute.svg %}
+        </button>
+      </div>
     </div>
     {% else %}
     {% assign url = i.image %}

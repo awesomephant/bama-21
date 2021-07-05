@@ -35,15 +35,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{t}}</title>
 
-  <meta name="description" content="{{ desc }}">
+  <meta name="description" content="{{ desc | escape }}">
   <link rel="stylesheet" href="{{"/main.css" | url}}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@HS_Mainz">
   <meta name="twitter:site" content="@HS_Mainz">
   <meta name="twitter:title" content="{{ t }}">
-  <meta name="twitter:description" content="{{desc}}">
+  <meta name="twitter:description" content="{{desc | escape }}">
   <meta name="twitter:image" content="{{ thumb }}">
-  <meta name="twitter:image:alt" content="{{ thumb_alt }}">
+  <meta name="twitter:image:alt" content="{{ thumb_alt | escape }}">
 
   <meta property="og:title" content="{{t}}">
   <meta property="og:description" content="{{desc}}">
@@ -62,6 +62,7 @@
 </head>
 
 <body class='{{ class }}' data-showing-work="{{settings.show_work}}">
+  <a href="#content" class="skip-link">Zum Inhalt springen</a>
   <header class="site__header">
     <h1 class="site__links">
       <a class="hs" href="https://www.hs-mainz.de/">
@@ -94,7 +95,9 @@
       </span>
     </h2>
   </header>
-  {{ content }}
+  <div class="content-wrapper" id="#content">
+    {{ content }}
+  </div>
   <canvas class="cursor"></canvas>
   <script>
     if (window.netlifyIdentity) {

@@ -8,8 +8,10 @@
   list-style: none;
   display: inline-block;
   margin-right: 1em;
-  text-decoration: none;
   margin-bottom: 1em;
+  a {
+    text-decoration: none;
+  }
   &.hidden {
     display: none;
   }
@@ -20,7 +22,7 @@
     transition: $fast;
   }
   &:hover,
-  &:focus {
+  &:focus-within {
     .projects__image {
       background: white !important;
     }
@@ -62,8 +64,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 100px;
   visibility: hidden;
   font-size: var(--ms-0);
   top: calc(100vh - 2.5em - 3.5em);
+  bottom: 0;
 }

@@ -4,127 +4,129 @@
             <h4>Global</h4>
             <div class="control">
                 <label for="c1-lineweight">Line Weight</label>
-                <input type="number" name="" id="lineweight" value="1">
+                <input type="number" name="lineweight" id="c1-lineweight" value="1">
             </div>
             <div class="control">
                 <label for="linecount">Line Count</label>
-                <input type="number" name="" id="linecount" value="65" step="1">
+                <input type="number" name="linecount" id="linecount" value="65" step="1">
             </div>
             <div class="control">
                 <label for="c1-lineweight">Slope</label>
-                <input type="number" name="" id="slope" value="-0.15" step=".01">
-           </div>
+                <input type="number" name="slope" id="slope" value="-0.15" step=".01">
+            </div>
         </section>
-        <section class="wave">
+        <div class="wave">
             <section>
                 <h4>Wave 1</h4>
                 <div class="perlin">
-                  <h5>X =</h5>
+                    <h5>X =</h5>
                     <div class="control">
-                      <input type="number" name="" id="x1" value="200">
+                        <label for="x1">X1</label>
+                        <input type="number" name="x1" id="x1" value="200">
                     </div>
                 </div>
                 <div class="perlin">
                     <h5>+P1</h5>
                     <div class="control">
-                        <label for="w1-p1-amp">Amplitude</label>
-                        <input type="number" name="" id="w1_p1_amp" value="200" step="1">
+                        <label for="w1_p1_amp">Amplitude</label>
+                        <input type="number" name="w1_p1_amp" id="w1_p1_amp" value="200" step="1">
                     </div>
                     <div class="control">
-                        <label for="w1-tween-count">Frequency</label>
-                        <input type="number" name="" id="w1_p1_freq" value=".0008" step=".0001">
+                        <label for="w1_p1_freq">Frequency</label>
+                        <input type="number" name="w1_p1_freq" id="w1_p1_freq" value=".0008" step=".0001">
                     </div>
                     <div class="control">
-                        <label for="w1-tween-count">Speed</label>
-                        <input type="number" name="" id="w1_p1_speed" value=".001" step=".0001">
+                        <label for="w1_p1_speed">Speed</label>
+                        <input type="number" name="w1_p1_speed" id="w1_p1_speed" value=".001" step=".0001">
                     </div>
                 </div>
                 <div class="perlin">
                     <h5>+P2</h5>
                     <div class="control">
-                        <label for="w1-p2-amp">Amplitude</label>
-                        <input type="number" name="" id="w1_p2_amp" value="10" step="1">
+                        <label for="w1_p2_amp">Amplitude</label>
+                        <input type="number" name="w1_p2_amp" id="w1_p2_amp" value="10" step="1">
                     </div>
                     <div class="control">
                         <label for="w1_p2_freq">Frequency</label>
-                        <input type="number" name="" id="w1_p2_freq" value=".005" step=".001">
+                        <input type="number" name="w1_p2_freq" id="w1_p2_freq" value=".005" step=".001">
                     </div>
                     <div class="control">
                         <label for="w1_p2_speed">Speed</label>
-                        <input type="number" name="" id="w1_p2_speed" value=".001" step=".0001">
+                        <input type="number" name="w1_p2_speed" id="w1_p2_speed" value=".001" step=".0001">
                     </div>
                 </div>
                 <div class="perlin">
                     <h5>Y = </h5>
                     <div class="control">
                         <label for="w1_p2_amp_y">Amplitude</label>
-                        <input type="number" name="" id="w1_p2_amp_y" value="10" step="1">
+                        <input type="number" name="w1_p2_amp_y" id="w1_p2_amp_y" value="10" step="1">
                     </div>
                     <div class="control">
                         <label for="w1_p2_freq_y">Frequency</label>
-                        <input type="number" name="" id="w1_p2_freq_y" value=".005" step=".001">
+                        <input type="number" name="w1_p2_freq_y" id="w1_p2_freq_y" value=".005" step=".001">
                     </div>
                     <div class="control">
-                        <label for="w1_p2_speed_y">Speed</label>
-                        <input type="number" name="" id="w1_p2_speed_Y" value=".001" step=".0001">
+                        <label for="w1_p2_speed_Y">Speed</label>
+                        <input type="number" name="w1_p2_speed_Y" id="w1_p2_speed_Y" value=".001" step=".0001">
                     </div>
                 </div>
 
             </section>
-        </section>
+        </div>
         <section class="wave">
-          <h4><span>Wave 2</span><span>(T) to Hide/Show</span></h4>
-          <div class="perlin">
-          <h5>X =</h5>
-          <div class="control">
-                <input type="number" name="" id="x2" value="500">
+            <h4><span>Wave 2</span><span>(T) to Hide/Show</span></h4>
+            <div class="perlin">
+                <h5>X =</h5>
+                <div class="control">
+                    <label for="x2">X2</label>
+                    <input type="number" name="x2" id="x2" value="500">
+                </div>
             </div>
-          </div>
             <div class="perlin">
                 <h5>+P1</h5>
                 <div class="control">
-                    <label for="w1-p1-amp">Amplitude</label>
-                    <input type="number" name="" id="w2_p1_amp" value="300">
+                    <label for="w2_p1_amp">Amplitude</label>
+                    <input type="number" name="w2_p1_amp" id="w2_p1_amp" value="300">
                 </div>
                 <div class="control">
-                    <label for="w1-tween-count">Frequency</label>
-                    <input type="number" name="" id="w2_p1_freq" value=".0008" step=".0001">
+                    <label for="w2_p1_freq">Frequency</label>
+                    <input type="number" name="w2_p1_freq" id="w2_p1_freq" value=".0008" step=".0001">
                 </div>
                 <div class="control">
-                    <label for="w1-tween-count">Speed</label>
-                    <input type="number" name="" id="w2_p1_speed" value=".001" step=".0001">
+                    <label for="w2_p1_speed">Speed</label>
+                    <input type="number" name="w2_p1_speed" id="w2_p1_speed" value=".001" step=".0001">
                 </div>
             </div>
             <div class="perlin">
                 <h5>+P2</h5>
                 <div class="control">
-                    <label for="w1-p1-amp">Amplitude</label>
-                    <input type="number" name="" id="w2_p2_amp" value="50">
+                    <label for="w2_p2_amp">Amplitude</label>
+                    <input type="number" name="w2_p2_amp" id="w2_p2_amp" value="50">
                 </div>
                 <div class="control">
-                    <label for="w1-tween-count">Frequency</label>
-                    <input type="number" name="" id="w2_p2_freq" value=".002" step=".0001">
+                    <label for="w2_p2_freq">Frequency</label>
+                    <input type="number" name="w2_p2_freq" id="w2_p2_freq" value=".002" step=".0001">
                 </div>
                 <div class="control">
-                    <label for="w1-tween-count">Speed</label>
-                    <input type="number" name="" id="w2_p2_speed" value=".001" step=".0001">
+                    <label for="w2_p2_speed">Speed</label>
+                    <input type="number" name="w2_p2_speed" id="w2_p2_speed" value=".001" step=".0001">
                 </div>
             </div>
             <div class="perlin">
-                    <h5>Y = </h5>
-                    <div class="control">
-                        <label for="w2_p2_amp_y">Amplitude</label>
-                        <input type="number" name="" id="w2_p2_amp_y" value="10" step="1">
-                    </div>
-                    <div class="control">
-                        <label for="w2_p2_freq_y">Frequency</label>
-                        <input type="number" name="" id="w2_p2_freq_y" value=".005" step=".001">
-                    </div>
-                    <div class="control">
-                        <label for="w2_p2_speed_y">Speed</label>
-                        <input type="number" name="" id="w2_p2_speed_Y" value=".001" step=".0001">
-                    </div>
+                <h5>Y = </h5>
+                <div class="control">
+                    <label for="w2_p2_amp_y">Amplitude</label>
+                    <input type="number" name="w2_p2_amp_y" id="w2_p2_amp_y" value="10" step="1">
                 </div>
+                <div class="control">
+                    <label for="w2_p2_freq_y">Frequency</label>
+                    <input type="number" name="w2_p2_freq_y" id="w2_p2_freq_y" value=".005" step=".001">
+                </div>
+                <div class="control">
+                    <label for="w2_p2_speed_Y">Speed</label>
+                    <input type="number" name="w2_p2_speed_Y" id="w2_p2_speed_Y" value=".001" step=".0001">
+                </div>
+            </div>
 
         </section>
     </div>

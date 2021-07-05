@@ -48,20 +48,22 @@ class: home
       </ul>
     </div>
   </div>
-  <div class="projects__list">
+  <ul class="projects__list">
     {% for p in collections.projects %}
     {% assign ptags = p.data.project_tags | split: ","%}
-    <a href="{{p.url | url }}" class="project__item {% unless p.data.featured_image.image %}no-image{% endunless %}" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
-      <div class="projects__image">
-        {% if p.data.featured_image.image %}
-        {% assign url = p.data.featured_image.image %}
-        {% image url, p.data.featured_image.alt, "20vw", "", "nf_resize=fit&h=400" %}
-        {% endif %}
-      </div>
-      <h4 class="project__title">{{p.data.title}}</h4>
-    </a>
+    <li class="project__item {% unless p.data.featured_image.image %}no-image{% endunless %}" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
+      <a href="{{p.url | url }}">
+        <div class="projects__image">
+          {% if p.data.featured_image.image %}
+          {% assign url = p.data.featured_image.image %}
+          {% image url, p.data.featured_image.alt, "20vw", "", "nf_resize=fit&h=400" %}
+          {% endif %}
+        </div>
+        <h4 class="project__title">{{p.data.title}}</h4>
+      </a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
 </section>
 {% endif %}
 {% include settings.liquid %}

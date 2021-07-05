@@ -24,6 +24,28 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: 0ms !important;
+  }
+}
+
 ::selection {
   background: white;
+}
+
+.skip-link {
+  position: absolute;
+  background-color: white;
+  padding: 0.5em 1em;
+  letter-spacing: 0.02em;
+  z-index: 10000;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: $fast;
+  &:focus {
+    transform: translateX(-50%) translateY(0%);
+  }
 }

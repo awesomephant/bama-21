@@ -38,21 +38,58 @@
 .video__container {
   position: relative;
 }
+
+.video__controls {
+  position: absolute;
+  bottom: 1.75rem;
+  right: 0.5rem;
+  display: flex;
+  path {
+    fill: white;
+  }
+  button {
+    font-size: 0;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid white;
+    mix-blend-mode: difference;
+    border-radius: $br;
+    padding: 0 0.2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:hover, &:focus {
+      background: white;
+      path {
+        fill: black;
+      }
+    }
+  }
+}
+
+.video__play {
+  .play {
+    display: none;
+  }
+  .pause {
+    display: block;
+  }
+  .is-paused & {
+    .play {
+      display: block;
+    }
+    .pause {
+      display: none;
+    }
+  }
+}
 .video__mute {
   display: none;
   [data-has-audio="true"] & {
     display: block;
   }
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 0;
-  appearance: none;
-  background-color: rgb(white, 0.8);
-  border-radius: $br;
-  border: 0;
-  padding: 0 0.2rem;
-  cursor: pointer;
   .volume-mute {
     display: none;
   }
@@ -79,6 +116,10 @@
     border-radius: 2px;
     border: 1px solid currentColor;
     display: inline-block;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 .project__image {

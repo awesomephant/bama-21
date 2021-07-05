@@ -9,7 +9,7 @@ function createObserver(el) {
     let options = {
         root: null,
         rootMargin: "0px",
-        threshold: [0, 1]
+        threshold: [0]
     };
 
     observer = new IntersectionObserver(handleIntersect, options);
@@ -17,7 +17,7 @@ function createObserver(el) {
 }
 function initNav() {
     const sentry = document.querySelector(".intersection-sentry")
-    if (sentry){
+    if (sentry) {
         createObserver(sentry);
     }
 

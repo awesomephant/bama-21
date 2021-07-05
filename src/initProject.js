@@ -14,21 +14,33 @@ function initProject() {
             });
         });
 
-        videoContainers.forEach(v => {
-            const video = v.querySelector("video")
-            const muteToggle = v.querySelector(".video__mute")
-            if (v.getAttribute("data-has-audio") === "true") {
+        videoContainers.forEach(container => {
+            const video = container.querySelector("video")
+            const muteToggle = container.querySelector(".video__mute")
+            const playToggle = container.querySelector(".video__play")
+
+            playToggle.addEventListener("click", e => {
+                e.preventDefault()
+                if (video.paused) {
+                    video.play()
+                    container.classList.remove("is-paused")
+                } else {
+                    video.pause()
+                    container.classList.add("is-paused")
+                }
+            })
+
+            if (container.getAttribute("data-has-audio") === "true") {
                 muteToggle.addEventListener("click", e => {
                     e.preventDefault();
-                    if (video.muted === true){
+                    if (video.muted === true) {
                         video.muted = false;
-                        v.classList.remove("is-muted")
+                        container.classList.remove("is-muted")
                     } else {
                         video.muted = true;
-                        v.classList.add("is-muted")
+                        container.classList.add("is-muted")
                     }
                 })
-                v.appendChild(muteToggle)
             }
         })
     }

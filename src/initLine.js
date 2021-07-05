@@ -85,10 +85,7 @@ function update() {
 
 function loop() {
     update();
-    // We break here so we draw the lines at least once
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-        window.requestAnimationFrame(loop)
-    }
+    window.requestAnimationFrame(loop)
 }
 
 function initTweenLines() {

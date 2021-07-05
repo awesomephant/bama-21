@@ -13,7 +13,7 @@ const config = {
     particleCount: 3,
     rMin: window.innerWidth * .5,
     rMax: window.innerWidth * .6,
-    friction: 0.1
+    friction: 0.05
 };
 
 let mouse = {
@@ -40,24 +40,10 @@ function update() {
     target.x += target.vx;
     target.y += target.vy;
 
-    const margin = .2;
-    const high = 1 - margin;
-    const low = margin;
-
-    if (target.x > c.canvas.width * high || target.x < c.canvas.width * low) {
-        target.vx *= -1;
-    }
-    if (target.y > c.canvas.height * high || target.y < c.canvas.height * low) {
-        target.vy *= -1;
-    }
+    target.x = mouse.x;
+    target.y = mouse.y;
 
     particles.forEach((p, i) => {
-        // Repelled by the mouse
-        let dMouse = d(p.x, p.y, mouse.x, mouse.y);
-
-        let aMouseX = (0.5 * (p.x - mouse.x)) / dMouse;
-        let aMouseY = (0.5 * (p.y - mouse.y)) / dMouse;
-
         let aParticlesX = 0;
         let aParticlesY = 0;
 
@@ -77,8 +63,8 @@ function update() {
         let aTargetX = -0.3 * (p.x - target.x) * dt * 0.00001;
         let aTargetY = -0.3 * (p.y - target.y) * dt * 0.00001;
 
-        p.ax = aParticlesX + aMouseX + aTargetX;
-        p.ay = aParticlesY + aMouseY + aTargetY;
+        p.ax = aParticlesX + aTargetX;
+        p.ay = aParticlesY + aTargetY;
 
         p.vx += p.ax;
         p.vy += p.ay;
@@ -121,7 +107,7 @@ function init(cb) {
         let y = gra(0, c.canvas.height);
         let r = gra(config.rMin, config.rMax);
         let fill = colours[0];
-        if (i % 2 === 0){
+        if (i % 2 === 0) {
             fill = colours[1]
         }
         particles.push(new Particle(x, y, r, fill));

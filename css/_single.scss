@@ -7,6 +7,7 @@
   flex-flow: column;
   font-size: var(--ms-0);
   @include bp(ml) {
+    min-height: calc(100vh - 6em);
     flex-flow: row;
   }
 }

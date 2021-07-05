@@ -11,8 +11,8 @@ const colours = [
 
 const config = {
     particleCount: 3,
-    rMin: window.innerWidth * .5,
-    rMax: window.innerWidth * .6,
+    rMin: window.innerWidth * .3,
+    rMax: window.innerWidth * .45,
     friction: 0.05
 };
 

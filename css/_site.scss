@@ -57,16 +57,16 @@
       display: inline-block;
     }
   }
-  .show-subtitle {
+  .show-subtitle--long {
     display: none;
-    @include bp(sm) {
+    @include bp(l){
       display: inline-block;
     }
-    @include bp(m) {
-      display: block;
-    }
-    @include bp(ml) {
-      display: inline-block;
+  }
+  .show-subtitle--short {
+    display: inline-block;
+    @include bp(l){
+      display: none;
     }
   }
   .home & {

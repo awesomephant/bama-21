@@ -58,7 +58,7 @@ module.exports = function (eleventyConfig) {
     // We're using Netlify Large Media, which means we can't do our own image processing at build time.
     // Therefore we disable it in that environment, and pass along parameters for Netlify's image transform instead.
     eleventyConfig.addLiquidShortcode("image", function(src, alt, sizes, className, parameters){
-      return `<img alt="${alt}" src="${src}?${parameters}">`
+      return `<img alt="${alt}" src="${src}?${parameters}" class="project__image loaded">`
     });
   } else {
     eleventyConfig.addLiquidShortcode("image", imageShortcode);

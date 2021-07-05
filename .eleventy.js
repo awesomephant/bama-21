@@ -2,7 +2,7 @@ const markdownIt = require("markdown-it");
 const md = new markdownIt();
 
 const Image = require("@11ty/eleventy-img");
-
+let prefix = "/sose21/"
 if (process.env.NODE_ENV === "staging") {
   console.log("Building site for staging")
   console.log(`— Setting pathPrefix to ""`)
@@ -10,7 +10,8 @@ if (process.env.NODE_ENV === "staging") {
   prefix = ""
 }
 async function imageShortcode(src, alt, sizes, className) {
-  console.log(`Processing ${"." + src}`)
+  src = "." + src;
+  console.log(`Processing ${src}`)
   let metadata = await Image(src, {
     widths: [400, 800, 1600, null],
     formats: ["webp", "jpeg"],

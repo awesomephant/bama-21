@@ -9,23 +9,30 @@ project_tags: Webdesign, UX Design
 links:
   - url: https://www.linkedin.com/in/rona-patzler-75bb76113/
 gallery:
-  - image: /assets/uploads/0_startbildschirm-–-1-2x.jpg
-    alt: "App-Screenshot. Hintergrund tiefblau. Titel: UX Basis / Eine App für den Einstieg in die Welt der User Experience. Darunter Rendering eines pinken Megafons."
-  - image: /assets/uploads/1_vorteile-der-app-–-1-2x.jpg
-    alt: "App-Screenshot. Erster Schritt eines Onboarding-Flows. Titel: Vorteile der App. Darunter Rendering einer Zielscheibe und einem fliegenden Pfeil. Kleiner Text: Begriffe und Zusammenhänge werden einfach und kompakt dargestellt"
-  - image: /assets/uploads/2_vorteile-der-app-2-2x.jpg
-    alt: "App-Screenshot. Zweiter Schritt eines Onboarding-Flows. Titel: Vorteile der App. Darunter Rendering einer Zielscheibe und einem fliegenden Pfeil. Kleiner Text: Die kurzen texte enthalten zahlreiche Grafiken, Videos und Beispiele"
-  - image: /assets/uploads/3_vorteile-der-app-3-2x.jpg
-    alt: "App-Screenshot. Dritter Schritt eines Onboarding-Flows. Titel: Vorteile der App. Darunter Rendering einer Zielscheibe mit Pfeil in der Mitte. Kleiner Text: Die App empfiehlt Tools sowie Methoden und bietet weiterführende Links und Medien"
-  - image: /assets/uploads/4_übersicht-–-2-2x.jpg
-    alt: "App-Screenshot. Titel: Übersicht. Darunter Rendering einer rosa Aktentasche. Darunter fünf Menüpunkte: User Experience Einführung / Gestaltungsprozess / Trends / Links und Medien / Glossar. Darunter Menüleiste mit 6 Symbolen."
-  - image: /assets/uploads/5_links-2x.jpg
-    alt: "App-Screenshot. Titel: Links und Medien. Daneben Rendering einer Rosa Weltkugel. Darunter 6 Menüpunkte: Bücher / Organisationen / tools / Tutorials / UX Experten / Website-Empfehlungen. Darunter Menüleiste mit 6 Symbolen."
-  - image: /assets/uploads/6_bücher-zu-2x.jpg
-    alt: "App-Screenshot. Titel: Bücher. Untertitel: Zur Vertiefung eignen sich insbesondere folgende deutschsprachige Bücher. Darunter drei Karten, jeweils mit Buchcover, Titel, Autor, Verlag, und Bewertung. Darunter Menüleiste mit 6 Symbolen."
+  - image: /assets/uploads/patzler_rona_1_kategorien.jpg
+    alt: "Rendering von 6 Smartphones auf hellblauem Grund. Bildschirme zeigen
+      verschiedene Ansichten einer App, Hintergrund tiefblau mit pinken
+      Illustrationen und weiß hinterlegten Menüpunkten. Titel: UX Basis / Eine
+      App für den Einstieg in die Welt der User Experience."
+  - image: /assets/uploads/patzler_rona_2_bedienbarkeit.jpg
+    alt: "Hand hält Smartphone mit Screenshot.  Hintergrund tiefblau. Titel: Links
+      und Medien. Darunter Rendering eines pinken Globus. Darunter 6 Menüpunkte:
+      Bücher / ORganisationen / Tools / Tutorials / UX Expert:innen /
+      Website-Empfehlungen. Darunter Menüleiste mit 6 Icons."
+  - image: /assets/uploads/patzler_rona_3_uebersicht.jpg
+    alt: Viele Smartphones in gleichmäßigem Raster angeordnet, in isometrischer
+      Ansicht. Die Bildschirme zeigen verschiedene Ansichten einer App.
+  - image: /assets/uploads/patzler_ronaa_4_glossar.jpg
+    alt: "Zwei Smartphones mit App-Screenshots. Hintergrund auf beiden tiefblau.
+      Links: Titel 'Glossar', darunter Rendering eines Rettungsrings, darunter
+      Suchfeld, darunter drei Menüpunkte 'A/B Testing / Atomic Design / Card
+      Sorting'. Rechts: Titel 'Interaktionsdesign', darunter Fließtext in weißem
+      Kasten, darunter Menüleiste mit 6 Icons"
 featured_image:
-  image: /assets/uploads/0_startbildschirm-–-1-2x.jpg
-  alt: "App-Screenshot. Hintergrund tiefblau. Titel: UX Basis / Eine App für den Einstieg in die Welt der User Experience. Darunter Rendering eines pinken Megafons."
+  image: /assets/uploads/patzler_rona_1_kategorien.jpg
+  alt: Rendering von 6 Smartphones auf hellblauem Grund. Bildschirme zeigen
+    verschiedene Ansichten einer App, Hintergrund tiefblau mit pinken
+    Illustrationen und weiß hinterlegten Menüpunkten.
 ---
 Durch das ständig wachsende Angebot an Dienstleistungen und Produkten ist es zwingend erforderlich den Kund:Innen eine einfache, bequeme und ansprechende Nutzungsmöglichkeit für die angebotenen Lösungen zu bieten, um langfristig erfolgreich zu sein. Dies ist das Feld der User Experience (UX), das heißt das Benutzererlebnis vor, während und nach der Nutzung einer Dienstleistung, eines Produktes oder eines Systems.
 

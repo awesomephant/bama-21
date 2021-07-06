@@ -16,11 +16,10 @@ class: home
 {% assign tags = tags | concat: tag_lower%}
 {% endif %}
 {% endunless %}
-
+{% endfor %}
 {% endfor %}
 
-{% endfor %}
-
+{% assign tags = tags | sort %}
 <section class="hero">
   <h3 class="site__title"><span>lüften</span></h3>
   <canvas class='lines' id="lines"></canvas>
@@ -30,7 +29,7 @@ class: home
 <section class="projects">
   <div class="intersection-sentry"></div>
   <button class="filters__open">Filter</button>
-  <div class="filters">
+  <div class="filters active">
     <div class="filters__inner">
       <button class="filters__close">
         {% include close.svg %}

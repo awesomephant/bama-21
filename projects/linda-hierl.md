@@ -3,32 +3,43 @@ layout: project
 title: Linda Hierl
 course: MA
 project_title: Lexikon des Begleitens
-prof: Prof. Charlotte Schröner,Prof. Monika Aichele,Prof. Dr. Matthias
-  Riedel,Eberhard Kirchhoff
+prof: Prof. Charlotte Schröner, Prof. Monika Aichele, Prof. Dr. Matthias Riedel,
+  Eberhard Kirchhoff
 draft: false
 project_tags: Buchgestaltung,Illustration
 gallery:
   - image: /assets/uploads/cover_3d_linda-hierl.jpg
-    alt: "Buch vor weißem Hintergrund. Cover zeigt grafische Illustration eines Hundes und handgeschriebenen Titel: Lexikon des Begleitens"
+    alt: "Buch vor weißem Hintergrund. Cover zeigt grafische Illustration eines
+      Hundes und handgeschriebenen Titel: Lexikon des Begleitens"
   - image: /assets/uploads/ds_1kapitel_linda-hierl.jpg
-    alt: "Aufgeschlagenes Buch. Links grafische Illustration eines Kopfes und einer Hundemaske, rechts Kapitelüberschrift: Kapitel 1 / Lernen"
+    alt: "Aufgeschlagenes Buch. Links grafische Illustration eines Kopfes und einer
+      Hundemaske, rechts Kapitelüberschrift: Kapitel 1 / Lernen"
   - image: /assets/uploads/ds_3kapitel_linda-hierl.jpg
-    alt: "Aufgeschlagenes Buch. Links grafische, verzerrte Illustration eines Menschen und eines Hundes. Rechts Kapitelüberschrift: Kapitel 3 / Vertragen & Liebe"
+    alt: "Aufgeschlagenes Buch. Links grafische, verzerrte Illustration eines
+      Menschen und eines Hundes. Rechts Kapitelüberschrift: Kapitel 3 /
+      Vertragen & Liebe"
   - image: /assets/uploads/ds_gegenwart_linda-hierl.jpg
-    alt: Aufgeschlagenes Buch. Links grafische Illustration mit großen Händen und kleinem Hund. Rechts Fließtext. 
+    alt: Aufgeschlagenes Buch. Links grafische Illustration mit großen Händen und
+      kleinem Hund. Rechts Fließtext.
   - image: /assets/uploads/ds_minnie_linda-hierl.jpg
-    alt: Aufgeschlagenes Buch. Links grafisches Portrait eines Hundes mit spitzen Ohren, rechts kleine Schrift
+    alt: Aufgeschlagenes Buch. Links grafisches Portrait eines Hundes mit spitzen
+      Ohren, rechts kleine Schrift
   - image: /assets/uploads/ds_mut_linda-hierl.jpg
-    alt: Aufgeschlagenes Buch. Links grafische Illustration eines Hundes, der sich im Rückspiegel eines Autos sieht, rechts Fließtext.
+    alt: Aufgeschlagenes Buch. Links grafische Illustration eines Hundes, der sich
+      im Rückspiegel eines Autos sieht, rechts Fließtext.
   - image: /assets/uploads/ds_neugier_linda-hierl.jpg
-    alt: Aufgeschlagenes Buch. Links grafische Illustation eines Menschen mit einer Frisbee, aus niedrigem Blickwinkel. Rechts Fließtext.
+    alt: Aufgeschlagenes Buch. Links grafische Illustation eines Menschen mit einer
+      Frisbee, aus niedrigem Blickwinkel. Rechts Fließtext.
   - image: /assets/uploads/ds_prioritäten_linda-hierl.jpg
-    alt: Aufgeschlagenes Buch. Links grafisches Portrait eines Menschen, der sein Gesicht mit den Händen rahmt. Links Fließtext.
+    alt: Aufgeschlagenes Buch. Links grafisches Portrait eines Menschen, der sein
+      Gesicht mit den Händen rahmt. Links Fließtext.
   - image: /assets/uploads/ds_schlussillu_linda-hierl.jpg
-    alt: Aufgeschlagenes Buch. Doppelseitige grafische Illustration eines Hundes, der mit einem Ball spielt
+    alt: Aufgeschlagenes Buch. Doppelseitige grafische Illustration eines Hundes,
+      der mit einem Ball spielt
 featured_image:
   image: /assets/uploads/ds_neugier_linda-hierl.jpg
-  alt: Aufgeschlagenes Buch. Links grafische Illustation eines Menschen mit einer Frisbee, aus niedrigem Blickwinkel. Rechts Fließtext.
+  alt: Aufgeschlagenes Buch. Links grafische Illustation eines Menschen mit einer
+    Frisbee, aus niedrigem Blickwinkel. Rechts Fließtext.
 ---
 **WARUM**: Aus etlichen Studien geht hervor, dass der Homo sapiens von seinem besten Freund, dem Canis lupus familiaris, gesundheitlich erheblich profitiert. So half er auch mir nach meiner krankheitsbedingten Dysbalance. Schnell erwachte eine Liebesgeschichte zu einem Lebewesen und der Natur, die es verkörperte – meinem Hundemädchen, Minnie. Minnie brachte mir nicht nur den Zauber meiner Kindheit zurück, sondern beeinflusste meine Sicht auf die Dinge ebenfalls positiv. Unter anderem lehrte sie mich auch die Akzeptanz der eigenen Grenzen.
 

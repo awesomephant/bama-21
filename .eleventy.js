@@ -11,11 +11,17 @@ if (process.env.NODE_ENV === "staging") {
 }
 async function imageShortcode(src, alt, sizes, className) {
   src = "." + src;
+  let widths = [400, 800, 1600, null]
+  let formats = ["webp", "jpeg"]
+  if (process.env.NODE_ENV === "dev") {
+    widths = [null]
+    formats = ["jpeg"]
+  }
   alt = alt.replace(/"/g, `'`)
   console.log(`Processing ${src}`)
   let metadata = await Image(src, {
-    widths: [400, 800, 1600, null],
-    formats: ["webp", "jpeg"],
+    widths: widths,
+    formats: formats,
     outputDir: "./_site/assets/images",
     urlPath: "/sose21/assets/images/"
   });

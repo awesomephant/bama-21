@@ -70,5 +70,6 @@
   // visibility: hidden;
   font-size: var(--ms-0);
   top: calc(200vh + -7em);
-  height: 30vh;
+  bottom: 0;
+  border: 1px solid red;
 }

@@ -7,8 +7,8 @@ prof: Prof. Johannes Bergerhausen
 draft: false
 project_tags: Installation, type design
 links:
-  - url: www.re-set.space
-  - url: www.instagram.com/i_m794005231
+  - url: http://www.re-set.space/
+  - url: https://www.instagram.com/i_m794005231/
 gallery:
   - image: /assets/uploads/1_titelbild.jpg
     alt: Foto von einer Zimmerpflanze und einem Bildschirm auf groben Betonboden vor

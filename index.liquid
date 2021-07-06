@@ -4,7 +4,7 @@ class: home
 ---
 {% assign tags = "" | split: "" %}
 
-{% for p in collections.projects %}
+{% for p in collections.liveProjects %}
 {% assign theseTags = p.data.project_tags | split: ","%}
 
 {% for tag in theseTags %}
@@ -48,7 +48,7 @@ class: home
     </div>
   </div>
   <ul class="projects__list">
-    {% for p in collections.projects %}
+    {% for p in collections.liveProjects %}
     {% assign ptags = p.data.project_tags | split: ","%}
     <li class="project__item {% unless p.data.featured_image.image %}no-image{% endunless %}" data-tags="{% for t in ptags %}{{t | slug}},{%endfor%}">
       <a href="{{p.url | url }}">

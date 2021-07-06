@@ -38,7 +38,10 @@
 .projects__image {
   margin-bottom: 0.2em;
   background: $orange;
-  height: 12em;
+  height: 6em;
+  @include bp(m){
+    height: 12em;
+  }
   display: inline-block;
   transition: $fast;
   border: 1px solid white;

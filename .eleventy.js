@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "staging") {
 async function imageShortcode(src, alt, sizes, className) {
   src = "." + src;
   alt = alt.replace(/"/g, `'`)
-  // console.log(`Processing ${src}`)
+  console.log(`Processing ${src}`)
   let metadata = await Image(src, {
     widths: [400, 800, 1600, null],
     formats: ["webp", "jpeg"],

@@ -36,9 +36,10 @@
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: $fast;
-  line-height: 1.1;
+  line-height: .85;
   height: 3.5em;
   @include bp(m) {
+    line-height: 1.1;
     margin-bottom: 0;
     justify-content: space-between;
     flex-flow: row;

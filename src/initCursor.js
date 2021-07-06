@@ -11,8 +11,8 @@ const colours = [
 
 const config = {
     particleCount: 3,
-    rMin: window.innerWidth * .3,
-    rMax: window.innerWidth * .45,
+    rMin: 500,
+    rMax: 800,
     friction: 0.05
 };
 
@@ -126,6 +126,8 @@ function loop() {
 function initCursor() {
     window.addEventListener("touchstart", e => {
         window.hasTouch = true;
+        mouse.x = e.touches[0].clientX
+        mouse.y = e.touches[0].clientY
     })
     window.addEventListener("mousemove", e => {
         if (!window.hasTouch) {

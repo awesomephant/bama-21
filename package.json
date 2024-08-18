@@ -13,7 +13,8 @@
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "start": "cross-env NODE_ENV=dev run-p watch:*",
     "build-production": "cross-env NODE_ENV=production run-s build:*",
-    "build-staging": "cross-env NODE_ENV=staging run-s build:*"
+    "build-staging": "cross-env NODE_ENV=staging run-s build:*",
+    "build-archive": "cross-env NODE_ENV=archive run-s build:*"
   },
   "author": "Max Kohler",
   "license": "ISC",
